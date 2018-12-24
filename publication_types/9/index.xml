@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>9 on Marco Guarnieri</title>
+    <link>https://mguarnieri.github.io/publication_types/9/</link>
+    <description>Recent content in 9 on Marco Guarnieri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Marco Guarnieri</copyright>
+    <lastBuildDate>Sun, 09 Sep 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mguarnieri.github.io/publication_types/9/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automated Management and Analysis of Security Policies using Eclipse</title>
+      <link>https://mguarnieri.github.io/publication/eclipseit2012/</link>
+      <pubDate>Sun, 09 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/eclipseit2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model-Driven Testing for Web Applications using Abstract State Machines</title>
+      <link>https://mguarnieri.github.io/publication/mdwe2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/mdwe2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Eclipse based environment for conformance testing by FSMs</title>
+      <link>https://mguarnieri.github.io/publication/eclipseit2011fsm/</link>
+      <pubDate>Fri, 09 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/eclipseit2011fsm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security vulnerabilities detection and protection using Eclipse</title>
+      <link>https://mguarnieri.github.io/publication/eclipseit2011static/</link>
+      <pubDate>Mon, 08 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/eclipseit2011static/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

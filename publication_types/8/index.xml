@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>8 on Marco Guarnieri</title>
+    <link>https://mguarnieri.github.io/publication_types/8/</link>
+    <description>Recent content in 8 on Marco Guarnieri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Marco Guarnieri</copyright>
+    <lastBuildDate>Fri, 03 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mguarnieri.github.io/publication_types/8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Synthesis of Probabilistic Privacy Enforcement</title>
+      <link>https://mguarnieri.github.io/publication/ccs2017/</link>
+      <pubDate>Fri, 03 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/ccs2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Securing Databases from Probabilistic Inference</title>
+      <link>https://mguarnieri.github.io/publication/csf2017/</link>
+      <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/csf2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test Execution Checkpointing for Web Applications</title>
+      <link>https://mguarnieri.github.io/publication/issta2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/issta2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Strong and Provably Secure Database Access Control</title>
+      <link>https://mguarnieri.github.io/publication/eurosp2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/eurosp2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Model-Driven Approach for Securing Software Architectures</title>
+      <link>https://mguarnieri.github.io/publication/secrypt2013/</link>
+      <pubDate>Thu, 10 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/secrypt2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Notion of Redundancy in Access Control Policies</title>
+      <link>https://mguarnieri.github.io/publication/sacmat2013/</link>
+      <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/sacmat2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AURORA: AUtomatic RObustness coveRage Analysis Tool</title>
+      <link>https://mguarnieri.github.io/publication/icst2013/</link>
+      <pubDate>Thu, 08 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/icst2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conflict Detection in Security Policies using Semantic Web Technology</title>
+      <link>https://mguarnieri.github.io/publication/estel2012/</link>
+      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/estel2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Domain Specific Language for Modeling Differential Constraints of Mobile Robots</title>
+      <link>https://mguarnieri.github.io/publication/robotica2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/robotica2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evolutionary Testing of PHP Web Applications with WETT</title>
+      <link>https://mguarnieri.github.io/publication/ssbse2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/ssbse2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Extending Coverage Criteria by Evaluating their Robustness to Code Structure Changes</title>
+      <link>https://mguarnieri.github.io/publication/ictss2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/ictss2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards Assisted Remediation of Security Vulnerabilities</title>
+      <link>https://mguarnieri.github.io/publication/securware2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/securware2012/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

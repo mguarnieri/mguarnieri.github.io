@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Marco Guarnieri</title>
+    <link>https://mguarnieri.github.io/publication/</link>
+    <description>Recent content in Publications on Marco Guarnieri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Marco Guarnieri</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mguarnieri.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SPECTECTOR: Principled detection of speculative information flows</title>
+      <link>https://mguarnieri.github.io/publication/spectector/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/spectector/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synthesis of Probabilistic Privacy Enforcement</title>
+      <link>https://mguarnieri.github.io/publication/ccs2017/</link>
+      <pubDate>Fri, 03 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/ccs2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formal Foundations for Access and Inference Control in Databases</title>
+      <link>https://mguarnieri.github.io/publication/phdthesis/</link>
+      <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/phdthesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Securing Databases from Probabilistic Inference</title>
+      <link>https://mguarnieri.github.io/publication/csf2017/</link>
+      <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/csf2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test Execution Checkpointing for Web Applications</title>
+      <link>https://mguarnieri.github.io/publication/issta2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/issta2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Strong and Provably Secure Database Access Control</title>
+      <link>https://mguarnieri.github.io/publication/eurosp2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/eurosp2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimal Security-Aware Query Processing</title>
+      <link>https://mguarnieri.github.io/publication/vldb2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/vldb2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Model-Driven Approach for Securing Software Architectures</title>
+      <link>https://mguarnieri.github.io/publication/secrypt2013/</link>
+      <pubDate>Thu, 10 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/secrypt2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Notion of Redundancy in Access Control Policies</title>
+      <link>https://mguarnieri.github.io/publication/sacmat2013/</link>
+      <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/sacmat2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AURORA: AUtomatic RObustness coveRage Analysis Tool</title>
+      <link>https://mguarnieri.github.io/publication/icst2013/</link>
+      <pubDate>Thu, 08 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/icst2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conflict Detection in Security Policies using Semantic Web Technology</title>
+      <link>https://mguarnieri.github.io/publication/estel2012/</link>
+      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/estel2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automated Management and Analysis of Security Policies using Eclipse</title>
+      <link>https://mguarnieri.github.io/publication/eclipseit2012/</link>
+      <pubDate>Sun, 09 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/eclipseit2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Domain Specific Language for Modeling Differential Constraints of Mobile Robots</title>
+      <link>https://mguarnieri.github.io/publication/robotica2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/robotica2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evolutionary Testing of PHP Web Applications with WETT</title>
+      <link>https://mguarnieri.github.io/publication/ssbse2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/ssbse2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Extending Coverage Criteria by Evaluating their Robustness to Code Structure Changes</title>
+      <link>https://mguarnieri.github.io/publication/ictss2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/ictss2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model-Driven Testing for Web Applications using Abstract State Machines</title>
+      <link>https://mguarnieri.github.io/publication/mdwe2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/mdwe2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards Assisted Remediation of Security Vulnerabilities</title>
+      <link>https://mguarnieri.github.io/publication/securware2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/securware2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Eclipse based environment for conformance testing by FSMs</title>
+      <link>https://mguarnieri.github.io/publication/eclipseit2011fsm/</link>
+      <pubDate>Fri, 09 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/eclipseit2011fsm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security vulnerabilities detection and protection using Eclipse</title>
+      <link>https://mguarnieri.github.io/publication/eclipseit2011static/</link>
+      <pubDate>Mon, 08 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/eclipseit2011static/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

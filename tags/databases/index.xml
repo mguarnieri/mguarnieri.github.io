@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Databases on Marco Guarnieri</title>
+    <link>https://mguarnieri.github.io/tags/databases/</link>
+    <description>Recent content in Databases on Marco Guarnieri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Marco Guarnieri</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mguarnieri.github.io/tags/databases/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Provably secure access and inference control in databases</title>
+      <link>https://mguarnieri.github.io/project/dbac-foundations/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/project/dbac-foundations/</guid>
+      <description>Databases often store and manage sensitive data. Regulating the access to databases is, therefore, essential. To this end, researchers have developed both access control and inference control mechanisms. Ideally, all these mechanisms should come with security proofs clearly stating what attacks they are designed to thwart, as with security mechanisms in other domains. Unfortunately, this is far from reality. Existing mechanisms are implemented in an ad hoc fashion, with neither precise security guarantees nor the means to verify them.</description>
+    </item>
+    
+  </channel>
+</rss>

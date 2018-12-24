@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Marco Guarnieri</title>
+    <link>https://mguarnieri.github.io/home/</link>
+    <description>Recent content in Homes on Marco Guarnieri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Marco Guarnieri</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mguarnieri.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://mguarnieri.github.io/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/home/about/</guid>
+      <description>About me I am a postdoctoral researcher at the IMDEA Software Institute. Before that, I completed my Ph.D. at the Institute of Information Security at ETH Zurich.
+My research focuses on the design, analysis, and implementation of practical systems for securely storing and processing sensitive data. I apply my research to the analysis of micro-architectural side-channel attacks (and countermeasures) and to database security.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://mguarnieri.github.io/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://mguarnieri.github.io/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://mguarnieri.github.io/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://mguarnieri.github.io/home/teaching/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/home/teaching/</guid>
+      <description>Universidad Politécnica de Madrid:
+ Guest lecturer for Seguridad Informatica - Fall 2018  ETH Zurich:
+ TA for Security Engineering — Autumn 2013–2016 TA for Information Security — Spring 2015, 2018 TA for Design of Digital Circuits — Spring 2017 TA for Informatik fur Mathematiker und Physiker — Autumn 2017  Università degli Studi di Bergamo:
+ TA for Object Oriented Programming – Spring 2011–2012  Students:
+ Andrés Sanchéz, Reasoning about speculative execution attacks, IMDEA Software Institute, Fall 2018 Tristan Buchs, Checkpointing-Based Testing, Master Thesis, ETH Zurich, Fall 2014 Ernst Zachow, Improving the Efficiency of Fuzz Testing Using Checkpointing, Master Thesis, ETH Zurich, Fall 2013 Marco Lazzari, Systematic Testing of TOR, Master Thesis, ETH Zurich, Fall 2013 Mohammed Ajil, Strong and Secure Access Control for PostgreSQL, Bachelor Thesis, ETH Zurich, Spring 2016  </description>
+    </item>
+    
+    <item>
+      <title>Service</title>
+      <link>https://mguarnieri.github.io/home/service/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/home/service/</guid>
+      <description>2018 &amp;mdash; 19th Privacy Enhancing Technologies Symposium (PETS), External reviewer
+2018 &amp;mdash; IEEE Transactions on Information Forensics and Security (TIFS), External reviewer
+2017 &amp;mdash; ACM Conference on Computer and Communications Security (CCS), External reviewer
+2017 &amp;mdash; VLDB Journal, External reviewer
+2016 &amp;mdash; European Symposium on Research in Computer Security (ESORICS), External reviewer
+2016 &amp;mdash; International Conference on Fundamental Approaches to Software Engineering (FASE), External reviewer
+2013 &amp;mdash; VLDB Journal, External reviewer</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://mguarnieri.github.io/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/home/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

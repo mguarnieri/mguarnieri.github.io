@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Micro-architectural attacks on Marco Guarnieri</title>
+    <link>https://mguarnieri.github.io/tags/micro-architectural-attacks/</link>
+    <description>Recent content in Micro-architectural attacks on Marco Guarnieri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Marco Guarnieri</copyright>
+    <lastBuildDate>Wed, 12 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mguarnieri.github.io/tags/micro-architectural-attacks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reasoning about speculative execution attacks</title>
+      <link>https://mguarnieri.github.io/project/speculative-execution/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/project/speculative-execution/</guid>
+      <description>Speculative execution attacks, like the recent SPECTRE attacks, exploit the persistent micro-architectural side effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness of countermeasures and for making principled decisions about their placement.</description>
+    </item>
+    
+  </channel>
+</rss>
