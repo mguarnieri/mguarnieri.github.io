@@ -50,7 +50,7 @@ My research focuses on the design, analysis, and implementation of practical sys
  Guest lecturer for Seguridad Informatica - Fall 2018  ETH Zurich:
  TA for Security Engineering — Autumn 2013–2016 TA for Information Security — Spring 2015, 2018 TA for Design of Digital Circuits — Spring 2017 TA for Informatik fur Mathematiker und Physiker — Autumn 2017  Università degli Studi di Bergamo:
  TA for Object Oriented Programming – Spring 2011–2012  Students:
- Andrés Sanchéz, Reasoning about speculative execution attacks, IMDEA Software Institute, Fall 2018 Tristan Buchs, Checkpointing-Based Testing, Master Thesis, ETH Zurich, Fall 2014 Ernst Zachow, Improving the Efficiency of Fuzz Testing Using Checkpointing, Master Thesis, ETH Zurich, Fall 2013 Marco Lazzari, Systematic Testing of TOR, Master Thesis, ETH Zurich, Fall 2013 Mohammed Ajil, Strong and Secure Access Control for PostgreSQL, Bachelor Thesis, ETH Zurich, Spring 2016  </description>
+ Andrés Sanchéz, Detecting speculative information-flows in large code bases, Bachelor thesis, IMDEA Software Institute, Spring 2019 Javier Lopez Alonso, Formal models for speculative execution, Bachelor thesis, IMDEA Software Institute, Spring 2019 Andrés Sanchéz, Reasoning about speculative execution attacks, IMDEA Software Institute, Fall 2018 Tristan Buchs, Checkpointing-Based Testing, Master thesis, ETH Zurich, Fall 2014 Ernst Zachow, Improving the Efficiency of Fuzz Testing Using Checkpointing, Master thesis, ETH Zurich, Fall 2013 Marco Lazzari, Systematic Testing of TOR, Master thesis, ETH Zurich, Fall 2013 Mohammed Ajil, Strong and Secure Access Control for PostgreSQL, Bachelor thesis, ETH Zurich, Spring 2016  </description>
     </item>
     
     <item>
@@ -59,13 +59,13 @@ My research focuses on the design, analysis, and implementation of practical sys
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://mguarnieri.github.io/home/service/</guid>
-      <description>2018 &amp;mdash; 19th Privacy Enhancing Technologies Symposium (PETS), External reviewer
+      <description>2019 &amp;mdash; 49th IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), External reviewer
+2018 &amp;mdash; 19th Privacy Enhancing Technologies Symposium (PETS), External reviewer
 2018 &amp;mdash; IEEE Transactions on Information Forensics and Security (TIFS), External reviewer
 2017 &amp;mdash; ACM Conference on Computer and Communications Security (CCS), External reviewer
 2017 &amp;mdash; VLDB Journal, External reviewer
 2016 &amp;mdash; European Symposium on Research in Computer Security (ESORICS), External reviewer
-2016 &amp;mdash; International Conference on Fundamental Approaches to Software Engineering (FASE), External reviewer
-2013 &amp;mdash; VLDB Journal, External reviewer</description>
+2016 &amp;mdash; International Conference on Fundamental Approaches to Software Engineering (FASE), External reviewer</description>
     </item>
     
     <item>

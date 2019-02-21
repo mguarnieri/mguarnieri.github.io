@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Information-Flow Control for Database-backed Applications</title>
+      <link>https://mguarnieri.github.io/publication/eurosp2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/eurosp2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Reasoning about speculative execution attacks</title>
       <link>https://mguarnieri.github.io/project/speculative-execution/</link>
       <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
@@ -162,15 +171,6 @@ More strongly, we argue that all database security mechanisms must offer securit
       <pubDate>Sun, 09 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>https://mguarnieri.github.io/publication/eclipseit2012/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Domain Specific Language for Modeling Differential Constraints of Mobile Robots</title>
-      <link>https://mguarnieri.github.io/publication/robotica2012/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://mguarnieri.github.io/publication/robotica2012/</guid>
       <description></description>
     </item>
     
