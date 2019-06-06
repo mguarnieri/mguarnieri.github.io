@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>SPECTECTOR: Principled detection of speculative information flows</title>
+      <link>https://mguarnieri.github.io/publication/sp2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/sp2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Information-Flow Control for Database-backed Applications</title>
       <link>https://mguarnieri.github.io/publication/eurosp2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
@@ -44,15 +53,6 @@
       the security of SPECTRE&amp;rsquo;s countermeasures implemented in state-of-the-art
       compilers.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>SPECTECTOR: Principled detection of speculative information flows</title>
-      <link>https://mguarnieri.github.io/publication/spectector/</link>
-      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://mguarnieri.github.io/publication/spectector/</guid>
-      <description></description>
     </item>
     
     <item>
