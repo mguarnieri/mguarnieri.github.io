@@ -19,7 +19,8 @@
       
       <guid>https://mguarnieri.github.io/home/about/</guid>
       <description>About me I am an assistant professor at the IMDEA Software Institute. Before that, I completed my Ph.D. at the Institute of Information Security at ETH Zurich.
-My research focuses on the design, analysis, and implementation of practical systems for securely storing and processing sensitive data. I apply my research to the analysis of micro-architectural side-channel attacks (and countermeasures) and to database security.</description>
+My research focuses on the design, analysis, and implementation of practical systems for securely storing and processing sensitive data. I apply my research to the analysis of micro-architectural side-channel attacks (and countermeasures) and to database security.
+OPEN POSITIONS Are you interested in doing research on program verification and computer security (with a focus on micro-architectural attacks)?</description>
     </item>
     
     <item>
@@ -59,13 +60,12 @@ My research focuses on the design, analysis, and implementation of practical sys
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://mguarnieri.github.io/home/service/</guid>
-      <description>2019 &amp;mdash; 49th IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), External reviewer
-2018 &amp;mdash; 19th Privacy Enhancing Technologies Symposium (PETS), External reviewer
-2018 &amp;mdash; IEEE Transactions on Information Forensics and Security (TIFS), External reviewer
-2017 &amp;mdash; ACM Conference on Computer and Communications Security (CCS), External reviewer
-2017 &amp;mdash; VLDB Journal, External reviewer
-2016 &amp;mdash; European Symposium on Research in Computer Security (ESORICS), External reviewer
-2016 &amp;mdash; International Conference on Fundamental Approaches to Software Engineering (FASE), External reviewer</description>
+      <description>2020 &amp;mdash; 33rd IEEE Computer Security Foundations Symposium (CSF), Program Committee Member
+2019 &amp;mdash; IEEE Transactions on Dependable and Secure Computing (TDSC), External reviewer
+2019 &amp;mdash; ACM SIGPLAN conference on Systems, Programming, Languages, and Applications: Software for Humanity &amp;ndash; OOPSLA track (OOPSLA), External reviewer
+2019 &amp;mdash; French National Research Agency 2019 generic call, Scientific expert
+2019 &amp;mdash; 49th IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), External reviewer
+2018 &amp;mdash; 19th Privacy Enhancing Technologies Symposium (PETS), External reviewer</description>
     </item>
     
     <item>
