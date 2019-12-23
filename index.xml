@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>CacheQuery: Learning Replacement Policies from Hardware Caches</title>
+      <link>https://mguarnieri.github.io/publication/cachequery/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/cachequery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Information-Flow Control for Database-backed Applications</title>
       <link>https://mguarnieri.github.io/publication/eurosp2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
@@ -162,15 +171,6 @@ More strongly, we argue that all database security mechanisms must offer securit
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://mguarnieri.github.io/publication/estel2012/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Automated Management and Analysis of Security Policies using Eclipse</title>
-      <link>https://mguarnieri.github.io/publication/eclipseit2012/</link>
-      <pubDate>Sun, 09 Sep 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://mguarnieri.github.io/publication/eclipseit2012/</guid>
       <description></description>
     </item>
     
