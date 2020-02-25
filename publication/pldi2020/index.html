@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -17,10 +15,10 @@
   
     
   
-  <meta name="description" content="Marco Guarnieri&#39;s website">
+  <meta name="description" content="We show how to infer deterministic cache replacement policies using off-the-shelf automata learning and program synthesis techniques. For this, we construct and chain two abstractions that expose the cache replacement policy of any set in the cache hierarchy as a membership oracle to the learning algorithm, based on timing measurements on a silicon CPU. Our experiments demonstrate an advantage in scope and scalability over prior art and uncover 2 previously undocumented cache replacement policies.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/publication_types/">
+  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/publication/pldi2020/">
 
   
 
@@ -86,15 +84,15 @@
   
 
   
-  <link rel="alternate" href="https://mguarnieri.github.io/publication_types/index.xml" type="application/rss+xml" title="Marco Guarnieri">
-  <link rel="feed" href="https://mguarnieri.github.io/publication_types/index.xml" type="application/rss+xml" title="Marco Guarnieri">
+  <link rel="alternate" href="https://mguarnieri.github.io/index.xml" type="application/rss+xml" title="Marco Guarnieri">
+  <link rel="feed" href="https://mguarnieri.github.io/index.xml" type="application/rss+xml" title="Marco Guarnieri">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://mguarnieri.github.io/publication_types/">
+  <link rel="canonical" href="https://mguarnieri.github.io/publication/pldi2020/">
 
   
   
@@ -109,19 +107,21 @@
   <meta property="twitter:creator" content="@MarcoGuarnier1">
   
   <meta property="og:site_name" content="Marco Guarnieri">
-  <meta property="og:url" content="https://mguarnieri.github.io/publication_types/">
-  <meta property="og:title" content="Publication_types | Marco Guarnieri">
-  <meta property="og:description" content="Marco Guarnieri&#39;s website"><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
+  <meta property="og:url" content="https://mguarnieri.github.io/publication/pldi2020/">
+  <meta property="og:title" content="CacheQuery: Learning Replacement Policies from Hardware Caches | Marco Guarnieri">
+  <meta property="og:description" content="We show how to infer deterministic cache replacement policies using off-the-shelf automata learning and program synthesis techniques. For this, we construct and chain two abstractions that expose the cache replacement policy of any set in the cache hierarchy as a membership oracle to the learning algorithm, based on timing measurements on a silicon CPU. Our experiments demonstrate an advantage in scope and scalability over prior art and uncover 2 previously undocumented cache replacement policies."><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2014-01-01T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2020-01-01T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2020-01-01T00:00:00&#43;00:00">
   
 
   
 
   
 
-  <title>Publication_types | Marco Guarnieri</title>
+  <title>CacheQuery: Learning Replacement Policies from Hardware Caches | Marco Guarnieri</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -334,8 +334,9 @@
   </div>
 </nav>
 
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
-
+  
 
 
 
@@ -349,59 +350,238 @@
 
 
   
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">CacheQuery: Learning Replacement Policies from Hardware Caches</h1>
+
+  
+
+  
+    
+
+<div class="article-metadata">
+
+  
+  
+  
+  <div>
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Pepe Vila</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Pierre Ganty</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name"><strong>Marco Guarnieri</strong></span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Boris Koepf</span>
+    </span>
+    
+  </div>
+  
+
+  <span class="article-date">
+    
+    <meta content="2020-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2020-01-01 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      2020
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Marco Guarnieri">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="/files/papers/pldi2020.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
+        data-filename="/publication/pldi2020/pldi2020.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/cgvwzq/cachequery/" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
 
   
   
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Publication_types</h1>
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/1912.09770" target="_blank" rel="noopener">
+    
+    Extended version (arXiv)
+  </a>
 
   
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/cgvwzq/polca/" target="_blank" rel="noopener">
+    
+    Additional code
+  </a>
+
+
+</div>
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">We show how to infer deterministic cache replacement policies using off-the-shelf automata learning and program synthesis techniques. For this, we construct and chain two abstractions that expose the cache replacement policy of any set in the cache hierarchy as a membership oracle to the learning algorithm, based on timing measurements on a silicon CPU. Our experiments demonstrate an advantage in scope and scalability over prior art and uncover 2 previously undocumented cache replacement policies.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            <a href="/publication/#8">
+              Conference
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">In <em>41st ACM SIGPLAN Conference on Programming Language Design and Implementation</em>.</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+    
+
+
 
   
-  
-  <div>
-    <h2><a href="/publication_types/2/">2</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/publication_types/7/">7</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/publication_types/8/">8</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/publication_types/9/">9</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
 
-  
 
+
+
+
+
+
+  </div>
 </div>
+
+
+
 <div class="container">
   <footer class="site-footer">
   
@@ -457,6 +637,9 @@
 
     
     
+    
+    <script src="/js/mathjax-config.js"></script>
+    
 
     
     
@@ -474,6 +657,8 @@
       
 
       
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
       
     
 
@@ -548,6 +733,4 @@
 
   </body>
 </html>
-
-
 
