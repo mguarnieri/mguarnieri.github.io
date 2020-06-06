@@ -4,6 +4,22 @@
     
     <url>
     
+      <loc>https://mguarnieri.github.io/publication/sc-spectre/</loc>
+      <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mguarnieri.github.io/publication/secure-speculation/</loc>
+      <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://mguarnieri.github.io/publication/pldi2020/</loc>
       <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -198,6 +214,15 @@
     
       <loc>https://mguarnieri.github.io/publication_types/2/</loc>
       <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mguarnieri.github.io/publication_types/4/</loc>
+      <lastmod>2020-06-05T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

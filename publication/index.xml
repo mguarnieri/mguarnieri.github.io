@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>Exorcising Spectres with Secure Compilers</title>
+      <link>https://mguarnieri.github.io/publication/sc-spectre/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/sc-spectre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware-Software Contracts for Secure Speculation</title>
+      <link>https://mguarnieri.github.io/publication/secure-speculation/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/secure-speculation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>CacheQuery: Learning Replacement Policies from Hardware Caches</title>
       <link>https://mguarnieri.github.io/publication/pldi2020/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>

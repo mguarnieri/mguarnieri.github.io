@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -17,10 +15,10 @@
   
     
   
-  <meta name="description" content="Marco Guarnieri&#39;s website">
+  <meta name="description" content="Since the discovery of Spectre, a large number of hardware mechanisms for secure speculation have been proposed. Intuitively, more defensive mechanisms are less efficient but can securely execute a larger class of programs, while more permissive mechanisms may offer more performance but require more defensive programming. Unfortunately, there are no hardware-software contracts that would turn this intuition into a basis for principled co-design. In this paper, we put forward a framework for specifying such contracts, and we demonstrate its expressiveness and flexibility: On the hardware side, we use the framework to provide the first formalization and comparison of the security guarantees provided by a representative class of mechanisms for secure speculation. On the software side, we use the framework to characterize program properties that guarantee secure co-design in two scenarios  traditionally investigated in isolation: (1) ensuring that a benign program does not leak information while computing on confidential data, and (2) ensuring that a potentially malicious program cannot read outside of its designated sandbox. Finally, we show how the properties corresponding to both scenarios can be checked based on existing tools for software verification, and we use them to validate our findings on executable code.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/publication_types/">
+  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/publication/secure-speculation/">
 
   
 
@@ -86,15 +84,15 @@
   
 
   
-  <link rel="alternate" href="https://mguarnieri.github.io/publication_types/index.xml" type="application/rss+xml" title="Marco Guarnieri">
-  <link rel="feed" href="https://mguarnieri.github.io/publication_types/index.xml" type="application/rss+xml" title="Marco Guarnieri">
+  <link rel="alternate" href="https://mguarnieri.github.io/index.xml" type="application/rss+xml" title="Marco Guarnieri">
+  <link rel="feed" href="https://mguarnieri.github.io/index.xml" type="application/rss+xml" title="Marco Guarnieri">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://mguarnieri.github.io/publication_types/">
+  <link rel="canonical" href="https://mguarnieri.github.io/publication/secure-speculation/">
 
   
   
@@ -109,19 +107,21 @@
   <meta property="twitter:creator" content="@MarcoGuarnier1">
   
   <meta property="og:site_name" content="Marco Guarnieri">
-  <meta property="og:url" content="https://mguarnieri.github.io/publication_types/">
-  <meta property="og:title" content="Publication_types | Marco Guarnieri">
-  <meta property="og:description" content="Marco Guarnieri&#39;s website"><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
+  <meta property="og:url" content="https://mguarnieri.github.io/publication/secure-speculation/">
+  <meta property="og:title" content="Hardware-Software Contracts for Secure Speculation | Marco Guarnieri">
+  <meta property="og:description" content="Since the discovery of Spectre, a large number of hardware mechanisms for secure speculation have been proposed. Intuitively, more defensive mechanisms are less efficient but can securely execute a larger class of programs, while more permissive mechanisms may offer more performance but require more defensive programming. Unfortunately, there are no hardware-software contracts that would turn this intuition into a basis for principled co-design. In this paper, we put forward a framework for specifying such contracts, and we demonstrate its expressiveness and flexibility: On the hardware side, we use the framework to provide the first formalization and comparison of the security guarantees provided by a representative class of mechanisms for secure speculation. On the software side, we use the framework to characterize program properties that guarantee secure co-design in two scenarios  traditionally investigated in isolation: (1) ensuring that a benign program does not leak information while computing on confidential data, and (2) ensuring that a potentially malicious program cannot read outside of its designated sandbox. Finally, we show how the properties corresponding to both scenarios can be checked based on existing tools for software verification, and we use them to validate our findings on executable code."><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2014-01-01T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2020-06-05T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2020-06-05T00:00:00&#43;00:00">
   
 
   
 
   
 
-  <title>Publication_types | Marco Guarnieri</title>
+  <title>Hardware-Software Contracts for Secure Speculation | Marco Guarnieri</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -334,8 +334,9 @@
   </div>
 </nav>
 
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
-
+  
 
 
 
@@ -351,64 +352,198 @@
   
 
   
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Hardware-Software Contracts for Secure Speculation</h1>
+
+  
+
+  
+    
+
+<div class="article-metadata">
+
+  
+  
+  
+  <div>
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name"><strong>Marco Guarnieri</strong></span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Boris Koepf</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Jan Reineke</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Pepe Vila</span>
+    </span>
+    
+  </div>
+  
+
+  <span class="article-date">
+    
+    <meta content="2020-06-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2020-06-05 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      2020
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Marco Guarnieri">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="/files/papers/secure-speculation.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
+        data-filename="/publication/secure-speculation/secure-speculation.bib">
+  Cite
+</button>
+
+
   
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Publication_types</h1>
+<a class="btn btn-outline-primary my-1 mr-1" href="https://spectector.github.io" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
 
   
+  <a class="btn btn-outline-primary my-1 mr-1" href="/project/speculative-execution/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">Since the discovery of Spectre, a large number of hardware mechanisms for secure speculation have been proposed. Intuitively, more defensive mechanisms are less efficient but can securely execute a larger class of programs, while more permissive mechanisms may offer more performance but require more defensive programming. Unfortunately, there are no hardware-software contracts that would turn this intuition into a basis for principled co-design. In this paper, we put forward a framework for specifying such contracts, and we demonstrate its expressiveness and flexibility: On the hardware side, we use the framework to provide the first formalization and comparison of the security guarantees provided by a representative class of mechanisms for secure speculation. On the software side, we use the framework to characterize program properties that guarantee secure co-design in two scenarios  traditionally investigated in isolation: (1) ensuring that a benign program does not leak information while computing on confidential data, and (2) ensuring that a potentially malicious program cannot read outside of its designated sandbox. Finally, we show how the properties corresponding to both scenarios can be checked based on existing tools for software verification, and we use them to validate our findings on executable code.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            <a href="/publication/#4">
+              Report
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+    
+
+
 
   
-  
-  <div>
-    <h2><a href="/publication_types/2/">2</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/publication_types/4/">4</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/publication_types/7/">7</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/publication_types/8/">8</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/publication_types/9/">9</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
 
-  
 
+
+
+
+
+
+  </div>
 </div>
+
+
+
 <div class="container">
   <footer class="site-footer">
   
@@ -464,6 +599,9 @@
 
     
     
+    
+    <script src="/js/mathjax-config.js"></script>
+    
 
     
     
@@ -481,6 +619,8 @@
       
 
       
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
       
     
 
@@ -555,6 +695,4 @@
 
   </body>
 </html>
-
-
 

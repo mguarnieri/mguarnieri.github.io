@@ -15,7 +15,8 @@
   
     
   
-  <meta name="description" content="Speculative execution attacks, like the recent SPECTRE attacks, exploit the persistent micro-architectural side effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness of countermeasures and for making principled decisions about their placement.">
+  <meta name="description" content="Speculative execution attacks, like the recent SPECTRE attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
+Goals This project&rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) SPECTRE&rsquo;s countermeasures.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/project/speculative-execution/">
@@ -109,7 +110,8 @@
   <meta property="og:site_name" content="Marco Guarnieri">
   <meta property="og:url" content="https://mguarnieri.github.io/project/speculative-execution/">
   <meta property="og:title" content="Reasoning about speculative execution attacks | Marco Guarnieri">
-  <meta property="og:description" content="Speculative execution attacks, like the recent SPECTRE attacks, exploit the persistent micro-architectural side effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness of countermeasures and for making principled decisions about their placement."><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
+  <meta property="og:description" content="Speculative execution attacks, like the recent SPECTRE attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
+Goals This project&rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) SPECTRE&rsquo;s countermeasures."><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-12-12T00:00:00&#43;00:00">
@@ -426,21 +428,19 @@
       
 
 <p>Speculative execution attacks, like the recent SPECTRE attacks, exploit the
-      persistent micro-architectural side effects of speculatively executed
+      persistent microarchitectural side-effects of speculatively executed
       instructions. These attacks affect all modern general-purpose CPUs and
       pose a serious threat against platforms with multiple tenants. However, we
       still lack a precise characterization of security against speculative
       execution attacks. Such a characterization is a prerequisite for reasoning
-      about the effectiveness of countermeasures and for making principled
-      decisions about their placement.</p>
+      about the effectiveness and security of countermeasures.</p>
 
 <h2 id="goals">Goals</h2>
 
 <p>This project&rsquo;s goals are (1) building the theoretical foundations for reasoning
       about speculative execution attacks, (2) developing techniques for
       detecting speculative leaks (or prove their absence), and (3) analyzing
-      the security of SPECTRE&rsquo;s countermeasures implemented in state-of-the-art
-      compilers.</p>
+      the security of (hardware and software) SPECTRE&rsquo;s countermeasures.</p>
 
     </div>
 
@@ -575,6 +575,140 @@
       
       
         <h2>Publications</h2>
+        
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <span itemprop="author">
+    Marco Patrignani, <strong>Marco Guarnieri</strong></span>.
+  <a href="/publication/sc-spectre/" itemprop="name">Exorcising Spectres with Secure Compilers</a>.
+  2020.
+  <p>
+
+
+
+
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/sc-spectre.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/sc-spectre/sc-spectre.bib">
+  Cite
+</button>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/speculative-execution/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1910.08607" target="_blank" rel="noopener">
+    
+    Extended version (arXiv)
+  </a>
+
+</p>
+</div>
+
+          
+        
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <span itemprop="author">
+    <strong>Marco Guarnieri</strong>, Boris Koepf, Jan Reineke, Pepe Vila</span>.
+  <a href="/publication/secure-speculation/" itemprop="name">Hardware-Software Contracts for Secure Speculation</a>.
+  2020.
+  <p>
+
+
+
+
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/secure-speculation.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/secure-speculation/secure-speculation.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://spectector.github.io" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/speculative-execution/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+</p>
+</div>
+
+          
         
           
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">

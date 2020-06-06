@@ -11,6 +11,24 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Exorcising Spectres with Secure Compilers</title>
+      <link>https://mguarnieri.github.io/publication/sc-spectre/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/sc-spectre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware-Software Contracts for Secure Speculation</title>
+      <link>https://mguarnieri.github.io/publication/secure-speculation/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/secure-speculation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>CacheQuery: Learning Replacement Policies from Hardware Caches</title>
       <link>https://mguarnieri.github.io/publication/pldi2020/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
@@ -46,21 +64,19 @@
       <description>
 
 &lt;p&gt;Speculative execution attacks, like the recent SPECTRE attacks, exploit the
-      persistent micro-architectural side effects of speculatively executed
+      persistent microarchitectural side-effects of speculatively executed
       instructions. These attacks affect all modern general-purpose CPUs and
       pose a serious threat against platforms with multiple tenants. However, we
       still lack a precise characterization of security against speculative
       execution attacks. Such a characterization is a prerequisite for reasoning
-      about the effectiveness of countermeasures and for making principled
-      decisions about their placement.&lt;/p&gt;
+      about the effectiveness and security of countermeasures.&lt;/p&gt;
 
 &lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 
 &lt;p&gt;This project&amp;rsquo;s goals are (1) building the theoretical foundations for reasoning
       about speculative execution attacks, (2) developing techniques for
       detecting speculative leaks (or prove their absence), and (3) analyzing
-      the security of SPECTRE&amp;rsquo;s countermeasures implemented in state-of-the-art
-      compilers.&lt;/p&gt;
+      the security of (hardware and software) SPECTRE&amp;rsquo;s countermeasures.&lt;/p&gt;
 </description>
     </item>
     
@@ -153,24 +169,6 @@ More strongly, we argue that all database security mechanisms must offer securit
       <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>https://mguarnieri.github.io/publication/sacmat2013/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AURORA: AUtomatic RObustness coveRage Analysis Tool</title>
-      <link>https://mguarnieri.github.io/publication/icst2013/</link>
-      <pubDate>Thu, 08 Aug 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://mguarnieri.github.io/publication/icst2013/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Conflict Detection in Security Policies using Semantic Web Technology</title>
-      <link>https://mguarnieri.github.io/publication/estel2012/</link>
-      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://mguarnieri.github.io/publication/estel2012/</guid>
       <description></description>
     </item>
     

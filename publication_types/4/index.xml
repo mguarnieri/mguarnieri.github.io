@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4 on Marco Guarnieri</title>
+    <link>https://mguarnieri.github.io/publication_types/4/</link>
+    <description>Recent content in 4 on Marco Guarnieri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Marco Guarnieri</copyright>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mguarnieri.github.io/publication_types/4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exorcising Spectres with Secure Compilers</title>
+      <link>https://mguarnieri.github.io/publication/sc-spectre/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/sc-spectre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware-Software Contracts for Secure Speculation</title>
+      <link>https://mguarnieri.github.io/publication/secure-speculation/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/secure-speculation/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

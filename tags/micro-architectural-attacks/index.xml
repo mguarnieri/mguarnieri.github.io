@@ -18,7 +18,8 @@
       <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://mguarnieri.github.io/project/speculative-execution/</guid>
-      <description>Speculative execution attacks, like the recent SPECTRE attacks, exploit the persistent micro-architectural side effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness of countermeasures and for making principled decisions about their placement.</description>
+      <description>Speculative execution attacks, like the recent SPECTRE attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
+Goals This project&amp;rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) SPECTRE&amp;rsquo;s countermeasures.</description>
     </item>
     
   </channel>
