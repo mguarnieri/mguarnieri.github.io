@@ -40,6 +40,15 @@
     </item>
     
     <item>
+      <title>Flushgeist: Cache Leaks from Beyond the Flush</title>
+      <link>https://mguarnieri.github.io/publication/flushgeist/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/flushgeist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SPECTECTOR: Principled detection of speculative information flows</title>
       <link>https://mguarnieri.github.io/publication/sp2020/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>

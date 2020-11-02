@@ -38,6 +38,15 @@
     </item>
     
     <item>
+      <title>Flushgeist: Cache Leaks from Beyond the Flush</title>
+      <link>https://mguarnieri.github.io/publication/flushgeist/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/flushgeist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SPECTECTOR: Principled detection of speculative information flows</title>
       <link>https://mguarnieri.github.io/publication/sp2020/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
@@ -160,15 +169,6 @@ More strongly, we argue that all database security mechanisms must offer securit
       <pubDate>Thu, 10 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>https://mguarnieri.github.io/publication/secrypt2013/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>On the Notion of Redundancy in Access Control Policies</title>
-      <link>https://mguarnieri.github.io/publication/sacmat2013/</link>
-      <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://mguarnieri.github.io/publication/sacmat2013/</guid>
       <description></description>
     </item>
     
