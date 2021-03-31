@@ -23,10 +23,19 @@
     
     <item>
       <title>Exorcising Spectres with Secure Compilers</title>
-      <link>https://mguarnieri.github.io/publication/sc-spectre/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      <link>https://mguarnieri.github.io/publication/ccs2021/</link>
+      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://mguarnieri.github.io/publication/sc-spectre/</guid>
+      <guid>https://mguarnieri.github.io/publication/ccs2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contract-aware Secure Compilation</title>
+      <link>https://mguarnieri.github.io/publication/casco/</link>
+      <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/publication/casco/</guid>
       <description></description>
     </item>
     

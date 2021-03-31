@@ -15,11 +15,11 @@
   
     
   
-  <meta name="description" content="Speculative execution attacks, like the recent Spectre attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
-Goals This project&rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) Spectre&rsquo;s countermeasures.">
+  <meta name="description" content="Speculative execution attacks, such as the recent Spectre attacks, are a recent class of security threats that affect almost all modern processors (that is, millions of IT systems). These attacks exploit the hardware side-effects of a CPU optimization called speculative execution to break fundamental security assumptions on how programs are executed and to leak sensitive information.
+Hardware/software co-design is an essential principle for building practical systems that are secure against these attacks.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/project/speculative-execution/">
+  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/project/hwsw-codesign/">
 
   
 
@@ -93,7 +93,7 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://mguarnieri.github.io/project/speculative-execution/">
+  <link rel="canonical" href="https://mguarnieri.github.io/project/hwsw-codesign/">
 
   
   
@@ -108,22 +108,22 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   <meta property="twitter:creator" content="@MarcoGuarnier1">
   
   <meta property="og:site_name" content="Marco Guarnieri">
-  <meta property="og:url" content="https://mguarnieri.github.io/project/speculative-execution/">
-  <meta property="og:title" content="Reasoning about speculative execution attacks | Marco Guarnieri">
-  <meta property="og:description" content="Speculative execution attacks, like the recent Spectre attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
-Goals This project&rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) Spectre&rsquo;s countermeasures."><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
+  <meta property="og:url" content="https://mguarnieri.github.io/project/hwsw-codesign/">
+  <meta property="og:title" content="Hardware/software co-design for secure speculation | Marco Guarnieri">
+  <meta property="og:description" content="Speculative execution attacks, such as the recent Spectre attacks, are a recent class of security threats that affect almost all modern processors (that is, millions of IT systems). These attacks exploit the hardware side-effects of a CPU optimization called speculative execution to break fundamental security assumptions on how programs are executed and to leak sensitive information.
+Hardware/software co-design is an essential principle for building practical systems that are secure against these attacks."><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-12-12T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2020-12-12T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2018-12-12T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2020-12-12T00:00:00&#43;00:00">
   
 
   
 
-  <title>Reasoning about speculative execution attacks | Marco Guarnieri</title>
+  
+
+  <title>Hardware/software co-design for secure speculation | Marco Guarnieri</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -320,7 +320,7 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Reasoning about speculative execution attacks</h1>
+  <h1 itemprop="name">Hardware/software co-design for secure speculation</h1>
 
   
 
@@ -338,9 +338,9 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
 
   <span class="article-date">
     
-    <meta content="2018-12-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2018-12-12 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      2018
+    <meta content="2020-12-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2020-12-12 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      2020
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -389,20 +389,30 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Speculative execution attacks, like the recent Spectre attacks, exploit the
-      persistent microarchitectural side-effects of speculatively executed
-      instructions. These attacks affect all modern general-purpose CPUs and
-      pose a serious threat against platforms with multiple tenants. However, we
-      still lack a precise characterization of security against speculative
-      execution attacks. Such a characterization is a prerequisite for reasoning
-      about the effectiveness and security of countermeasures.</p>
+<p>Speculative execution attacks, such as the recent Spectre attacks, are a recent
+class of security threats that affect almost all modern processors (that is,
+millions of IT systems). These attacks exploit the hardware side-effects of a
+CPU optimization called speculative execution to break fundamental security
+assumptions on how programs are executed and to leak sensitive information.</p>
+
+<p>Hardware/software co-design is an essential principle for building practical
+systems that are secure against these attacks. Following this principle,
+hardware and software should collaborate to thwart speculative execution
+attacks. Hardware platforms should provide precise security guarantees and
+expose control on the internal microarchitectural state. Software, instead,
+should leverage these guarantees to achieve end-to-end security. Unfortunately,
+we currently lack foundations, guiding principles, and tools for co-design for
+security.</p>
 
 <h2 id="goals">Goals</h2>
 
-<p>This project&rsquo;s goals are (1) building the theoretical foundations for reasoning
-      about speculative execution attacks, (2) developing techniques for
-      detecting speculative leaks (or prove their absence), and (3) analyzing
-      the security of (hardware and software) Spectre&rsquo;s countermeasures.</p>
+<p>This project will develop foundations, models, and tools for enabling co-design for
+secure speculation. The project will revolve around the notion of
+hardware/software security contract, an abstraction enabling the distribution of
+security obligations between hardware and software. The project will provide
+developers with languages for specifying security contracts as well as
+techniques for automatically determining whether proposals for secure
+speculation effectively prevent speculative execution attacks.</p>
 
     </div>
 
@@ -636,9 +646,9 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
   <span itemprop="author">
-    Marco Patrignani, <strong>Marco Guarnieri</strong></span>.
-  <a href="/publication/ccs2021/" itemprop="name">Exorcising Spectres with Secure Compilers</a>.
-  In <em>CCS</em>,
+    <strong>Marco Guarnieri</strong>, Marco Patrignani</span>.
+  <a href="/publication/casco/" itemprop="name">Contract-aware Secure Compilation</a>.
+  Technical report,
   2021.
   <p>
 
@@ -653,14 +663,14 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/ccs2021.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/casco.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/ccs2021/ccs2021.bib">
+        data-filename="/publication/casco/ccs2021.bib">
   Cite
 </button>
 
@@ -669,7 +679,7 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
 
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/speculative-execution/">
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/hwsw-codesign/">
     Project
   </a>
   
@@ -694,129 +704,9 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1910.08607" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2012.14205" target="_blank" rel="noopener">
     
     Extended version (arXiv)
-  </a>
-
-</p>
-</div>
-
-          
-        
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    <strong>Marco Guarnieri</strong>, Boris Koepf, José F. Morales, Jan Reineke, Andrés Sánchez</span>.
-  <a href="/publication/sp2020/" itemprop="name">SPECTECTOR: Principled detection of speculative information flows</a>.
-  In <em>S&amp;P</em>,
-  2020.
-  <p>
-
-
-
-
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/sp2020.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/sp2020/sp2020.bib">
-  Cite
-</button>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://spectector.github.io" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/speculative-execution/">
-    Project
-  </a>
-  
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/sp2020_poster.pdf" target="_blank" rel="noopener">
-  Poster
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/sp2020_slides.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/FjscRa0ocy0" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1812.08639" target="_blank" rel="noopener">
-    
-    Extended version (arXiv)
-  </a>
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/QMCUcFI2wTI" target="_blank" rel="noopener">
-    
-    Preview video
   </a>
 
 </p>

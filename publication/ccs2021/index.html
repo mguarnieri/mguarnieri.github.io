@@ -15,11 +15,10 @@
   
     
   
-  <meta name="description" content="Speculative execution attacks, like the recent Spectre attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
-Goals This project&rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) Spectre&rsquo;s countermeasures.">
+  <meta name="description" content="Attackers can access sensitive information of programs by exploiting the side-effects of speculatively-executed instructions using Spectre attacks. To mitigate theses attacks, popular compilers deployed a wide range of countermeasures whose security, however, has not been ascertained: while some are believed to be secure, others are known to be insecure and result in vulnerable programs. To reason about the security guarantees of these compiler countermeasures, this paper presents a framework comprising secure compilation criteria characterizing when compilers produce code resistant against Spectre attacks. With this framework, we perform a comprehensive security analysis of compiler countermeasures against Spectre attacks implemented in major compilers. This work provides sound foundations to formally reason about the security of compiler countermeasures against Spectre attacks as well as the first proofs of security and insecurity of said countermeasures.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/project/speculative-execution/">
+  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/publication/ccs2021/">
 
   
 
@@ -93,7 +92,7 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://mguarnieri.github.io/project/speculative-execution/">
+  <link rel="canonical" href="https://mguarnieri.github.io/publication/ccs2021/">
 
   
   
@@ -108,22 +107,21 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   <meta property="twitter:creator" content="@MarcoGuarnier1">
   
   <meta property="og:site_name" content="Marco Guarnieri">
-  <meta property="og:url" content="https://mguarnieri.github.io/project/speculative-execution/">
-  <meta property="og:title" content="Reasoning about speculative execution attacks | Marco Guarnieri">
-  <meta property="og:description" content="Speculative execution attacks, like the recent Spectre attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
-Goals This project&rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) Spectre&rsquo;s countermeasures."><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
+  <meta property="og:url" content="https://mguarnieri.github.io/publication/ccs2021/">
+  <meta property="og:title" content="Exorcising Spectres with Secure Compilers | Marco Guarnieri">
+  <meta property="og:description" content="Attackers can access sensitive information of programs by exploiting the side-effects of speculatively-executed instructions using Spectre attacks. To mitigate theses attacks, popular compilers deployed a wide range of countermeasures whose security, however, has not been ascertained: while some are believed to be secure, others are known to be insecure and result in vulnerable programs. To reason about the security guarantees of these compiler countermeasures, this paper presents a framework comprising secure compilation criteria characterizing when compilers produce code resistant against Spectre attacks. With this framework, we perform a comprehensive security analysis of compiler countermeasures against Spectre attacks implemented in major compilers. This work provides sound foundations to formally reason about the security of compiler countermeasures against Spectre attacks as well as the first proofs of security and insecurity of said countermeasures."><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-12-12T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2021-04-04T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2018-12-12T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2021-04-04T00:00:00&#43;00:00">
   
 
   
 
-  <title>Reasoning about speculative execution attacks | Marco Guarnieri</title>
+  
+
+  <title>Exorcising Spectres with Secure Compilers | Marco Guarnieri</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -298,8 +296,7 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   </div>
 </nav>
 
-
-<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
   
 
@@ -320,7 +317,7 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Reasoning about speculative execution attacks</h1>
+  <h1 itemprop="name">Exorcising Spectres with Secure Compilers</h1>
 
   
 
@@ -331,16 +328,23 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
 
   
   
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Marco Guarnieri">
-  </span>
+  
+  <div>
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Marco Patrignani</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name"><strong>Marco Guarnieri</strong></span>
+    </span>
+    
+  </div>
   
 
   <span class="article-date">
     
-    <meta content="2018-12-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2018-12-12 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      2018
+    <meta content="2021-04-04 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2021-04-04 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      2021
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -376,177 +380,13 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
 
 
 
-
-
-
   
-</div>
 
 
 
-  <div class="article-container">
-
-    <div class="article-style" itemprop="articleBody">
-      
-
-<p>Speculative execution attacks, like the recent Spectre attacks, exploit the
-      persistent microarchitectural side-effects of speculatively executed
-      instructions. These attacks affect all modern general-purpose CPUs and
-      pose a serious threat against platforms with multiple tenants. However, we
-      still lack a precise characterization of security against speculative
-      execution attacks. Such a characterization is a prerequisite for reasoning
-      about the effectiveness and security of countermeasures.</p>
-
-<h2 id="goals">Goals</h2>
-
-<p>This project&rsquo;s goals are (1) building the theoretical foundations for reasoning
-      about speculative execution attacks, (2) developing techniques for
-      detecting speculative leaks (or prove their absence), and (3) analyzing
-      the security of (hardware and software) Spectre&rsquo;s countermeasures.</p>
-
-    </div>
-
-    
-
-
-<div class="article-tags">
+<div class="btn-links mb-3">
   
-  <a class="badge badge-light" href="/tags/security/">Security</a>
   
-  <a class="badge badge-light" href="/tags/micro-architectural-attacks/">Micro-architectural attacks</a>
-  
-</div>
-
-
-
-    
-
-
-
-
-
-
-<div class="media author-card" itemscope itemtype="http://schema.org/Person">
-  
-  <img class="portrait mr-3" src="/img/portrait_small.jpg" itemprop="image" alt="Avatar">
-  
-  <div class="media-body">
-    <h5 class="card-title" itemprop="name"><a href="/">Marco Guarnieri</a></h5>
-    <h6 class="card-subtitle">Assistant professor</h6>
-    
-    <ul class="network-icon" aria-hidden="true">
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-      <li>
-        <a itemprop="sameAs" href="mailto:marco.guarnieri@imdea.org" >
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://twitter.com/MarcoGuarnier1" target="_blank" rel="noopener">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=gP-5CSsAAAAJ&amp;hl=en" target="_blank" rel="noopener">
-          <i class="ai ai-google-scholar"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://github.com/mguarnieri" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://linkedin.com/in/MarcoGuarnier1" target="_blank" rel="noopener">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-
-
-
-    
-    
-
-    
-
-      
-      
-      
-
-      
-      
-      
-        <h2>Publications</h2>
-        
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    <strong>Marco Guarnieri</strong>, Boris Koepf, Jan Reineke, Pepe Vila</span>.
-  <a href="/publication/sp2021/" itemprop="name">Hardware-Software Contracts for Secure Speculation</a>.
-  In <em>S&amp;P</em>,
-  2021.
-  <p>
 
 
 
@@ -559,107 +399,13 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/sp2021.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="/files/papers/ccs2021.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/sp2021/sp2021.bib">
-  Cite
-</button>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://spectector.github.io" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/speculative-execution/">
-    Project
-  </a>
-  
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/hwsw-codesign/">
-    Project
-  </a>
-  
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/NmJs2UxeZKo" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2006.03841" target="_blank" rel="noopener">
-    
-    Extended version (arXiv)
-  </a>
-
-</p>
-</div>
-
-          
-        
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Marco Patrignani, <strong>Marco Guarnieri</strong></span>.
-  <a href="/publication/ccs2021/" itemprop="name">Exorcising Spectres with Secure Compilers</a>.
-  In <em>CCS</em>,
-  2021.
-  <p>
-
-
-
-
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/ccs2021.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
         data-filename="/publication/ccs2021/ccs2021.bib">
   Cite
 </button>
@@ -669,7 +415,7 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
 
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/speculative-execution/">
+  <a class="btn btn-outline-primary my-1 mr-1" href="/project/speculative-execution/">
     Project
   </a>
   
@@ -694,145 +440,83 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1910.08607" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/1910.08607" target="_blank" rel="noopener">
     
     Extended version (arXiv)
   </a>
 
-</p>
+
 </div>
 
-          
-        
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    <strong>Marco Guarnieri</strong>, Boris Koepf, José F. Morales, Jan Reineke, Andrés Sánchez</span>.
-  <a href="/publication/sp2020/" itemprop="name">SPECTECTOR: Principled detection of speculative information flows</a>.
-  In <em>S&amp;P</em>,
-  2020.
-  <p>
-
-
-
-
-
-
 
   
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/sp2020.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/sp2020/sp2020.bib">
-  Cite
-</button>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://spectector.github.io" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/speculative-execution/">
-    Project
-  </a>
-  
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/sp2020_poster.pdf" target="_blank" rel="noopener">
-  Poster
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/sp2020_slides.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/FjscRa0ocy0" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1812.08639" target="_blank" rel="noopener">
-    
-    Extended version (arXiv)
-  </a>
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/QMCUcFI2wTI" target="_blank" rel="noopener">
-    
-    Preview video
-  </a>
-
-</p>
 </div>
 
-          
-        
-      
 
-      
-      
-      
+
+  <div class="article-container">
+
     
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">Attackers can access sensitive information of programs by exploiting the side-effects of speculatively-executed instructions using Spectre attacks. To mitigate theses attacks, popular compilers deployed a wide range of countermeasures whose security, however, has not been ascertained: while some are believed to be secure, others are known to be insecure and result in vulnerable programs. To reason about the security guarantees of these compiler countermeasures, this paper presents a framework comprising secure compilation criteria characterizing when compilers produce code resistant against Spectre attacks. With this framework, we perform a comprehensive security analysis of compiler countermeasures against Spectre attacks implemented in major compilers. This work provides sound foundations to formally reason about the security of compiler countermeasures against Spectre attacks as well as the first proofs of security and insecurity of said countermeasures.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">In <em>28th ACM Conference on Computer and Communications Security</em>.</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+    
+
+
+
+  
+
+
+
+
+
+
 
   </div>
-</article>
+</div>
 
 
 
@@ -891,6 +575,9 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
 
     
     
+    
+    <script src="/js/mathjax-config.js"></script>
+    
 
     
     
@@ -908,6 +595,8 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
       
 
       
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
       
     
 

@@ -114,7 +114,7 @@
   <meta property="og:description" content="Marco Guarnieri&#39;s website"><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2018-12-12T00:00:00&#43;00:00">
+  <meta property="og:updated_time" content="2020-12-12T00:00:00&#43;00:00">
   
 
   
@@ -333,11 +333,31 @@
   
   
   <div>
+    <h2><a href="/project/hwsw-codesign/">Hardware/software co-design for secure speculation</a></h2>
+    <div class="article-style">
+      
+      Speculative execution attacks, such as the recent Spectre attacks, are a recent class of security threats that affect almost all modern processors (that is, millions of IT systems). These attacks exploit the hardware side-effects of a CPU optimization called speculative execution to break fundamental security assumptions on how programs are executed and to leak sensitive information.
+Hardware/software co-design is an essential principle for building practical systems that are secure against these attacks.
+      
+    </div>
+  </div>
+  
+  <div>
     <h2><a href="/project/speculative-execution/">Reasoning about speculative execution attacks</a></h2>
     <div class="article-style">
       
-      Speculative execution attacks, like the recent SPECTRE attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
-Goals This project&rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) SPECTRE&rsquo;s countermeasures.
+      Speculative execution attacks, like the recent Spectre attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
+Goals This project&rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) Spectre&rsquo;s countermeasures.
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="/project/learning-uarch-models/">Automatically learning micro-architectural models</a></h2>
+    <div class="article-style">
+      
+      Understanding the timing behavior of modern CPUs is crucial for optimizing code and for ensuring timing-related security and safety properties. Unfortunately, the timing behavior of today’s high-performance processors depends on subtle and poorly documented details of their micro-architecture, which has triggered laborious efforts from researchers to build models of different components.
+Goals This project aims at constructing techniques and tools for automatically inferring and learning high-level models of micro-architectural components (like caches and prefetchers) directly from timing measurements.
       
     </div>
   </div>

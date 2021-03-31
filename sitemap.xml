@@ -12,8 +12,24 @@
     
     <url>
     
-      <loc>https://mguarnieri.github.io/publication/sc-spectre/</loc>
-      <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+      <loc>https://mguarnieri.github.io/publication/ccs2021/</loc>
+      <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mguarnieri.github.io/publication/casco/</loc>
+      <lastmod>2021-03-03T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mguarnieri.github.io/project/hwsw-codesign/</loc>
+      <lastmod>2020-12-12T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -54,6 +70,14 @@
     
       <loc>https://mguarnieri.github.io/project/speculative-execution/</loc>
       <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mguarnieri.github.io/project/learning-uarch-models/</loc>
+      <lastmod>2018-11-11T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -239,7 +263,7 @@
     <url>
     
       <loc>https://mguarnieri.github.io/publication_types/4/</loc>
-      <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+      <lastmod>2021-03-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -319,7 +343,7 @@
     <url>
     
       <loc>https://mguarnieri.github.io/tags/micro-architectural-attacks/</loc>
-      <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+      <lastmod>2020-12-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -328,7 +352,7 @@
     <url>
     
       <loc>https://mguarnieri.github.io/project/</loc>
-      <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+      <lastmod>2020-12-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -346,7 +370,7 @@
     <url>
     
       <loc>https://mguarnieri.github.io/tags/security/</loc>
-      <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+      <lastmod>2020-12-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

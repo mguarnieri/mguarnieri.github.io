@@ -15,11 +15,11 @@
   
     
   
-  <meta name="description" content="Speculative execution attacks, like the recent Spectre attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
-Goals This project&rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) Spectre&rsquo;s countermeasures.">
+  <meta name="description" content="Understanding the timing behavior of modern CPUs is crucial for optimizing code and for ensuring timing-related security and safety properties. Unfortunately, the timing behavior of today’s high-performance processors depends on subtle and poorly documented details of their micro-architecture, which has triggered laborious efforts from researchers to build models of different components.
+Goals This project aims at constructing techniques and tools for automatically inferring and learning high-level models of micro-architectural components (like caches and prefetchers) directly from timing measurements.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/project/speculative-execution/">
+  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/project/learning-uarch-models/">
 
   
 
@@ -93,7 +93,7 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://mguarnieri.github.io/project/speculative-execution/">
+  <link rel="canonical" href="https://mguarnieri.github.io/project/learning-uarch-models/">
 
   
   
@@ -108,22 +108,22 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   <meta property="twitter:creator" content="@MarcoGuarnier1">
   
   <meta property="og:site_name" content="Marco Guarnieri">
-  <meta property="og:url" content="https://mguarnieri.github.io/project/speculative-execution/">
-  <meta property="og:title" content="Reasoning about speculative execution attacks | Marco Guarnieri">
-  <meta property="og:description" content="Speculative execution attacks, like the recent Spectre attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
-Goals This project&rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) Spectre&rsquo;s countermeasures."><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
+  <meta property="og:url" content="https://mguarnieri.github.io/project/learning-uarch-models/">
+  <meta property="og:title" content="Automatically learning micro-architectural models | Marco Guarnieri">
+  <meta property="og:description" content="Understanding the timing behavior of modern CPUs is crucial for optimizing code and for ensuring timing-related security and safety properties. Unfortunately, the timing behavior of today’s high-performance processors depends on subtle and poorly documented details of their micro-architecture, which has triggered laborious efforts from researchers to build models of different components.
+Goals This project aims at constructing techniques and tools for automatically inferring and learning high-level models of micro-architectural components (like caches and prefetchers) directly from timing measurements."><meta property="og:image" content="https://mguarnieri.github.io/img/portrait_small.jpg">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-12-12T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2018-11-11T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2018-12-12T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2018-11-11T00:00:00&#43;00:00">
   
 
   
 
-  <title>Reasoning about speculative execution attacks | Marco Guarnieri</title>
+  
+
+  <title>Automatically learning micro-architectural models | Marco Guarnieri</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -320,7 +320,7 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Reasoning about speculative execution attacks</h1>
+  <h1 itemprop="name">Automatically learning micro-architectural models</h1>
 
   
 
@@ -338,8 +338,8 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
 
   <span class="article-date">
     
-    <meta content="2018-12-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2018-12-12 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+    <meta content="2018-11-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2018-11-11 00:00:00 &#43;0000 UTC" itemprop="dateModified">
       2018
     </time>
   </span>
@@ -389,20 +389,17 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Speculative execution attacks, like the recent Spectre attacks, exploit the
-      persistent microarchitectural side-effects of speculatively executed
-      instructions. These attacks affect all modern general-purpose CPUs and
-      pose a serious threat against platforms with multiple tenants. However, we
-      still lack a precise characterization of security against speculative
-      execution attacks. Such a characterization is a prerequisite for reasoning
-      about the effectiveness and security of countermeasures.</p>
+<p>Understanding the timing behavior of modern CPUs is crucial for optimizing code
+and for ensuring timing-related security and safety properties. Unfortunately,
+the timing behavior of today’s high-performance processors depends on subtle and
+poorly documented details of their micro-architecture, which has triggered
+laborious efforts from researchers to build models of different components.</p>
 
 <h2 id="goals">Goals</h2>
 
-<p>This project&rsquo;s goals are (1) building the theoretical foundations for reasoning
-      about speculative execution attacks, (2) developing techniques for
-      detecting speculative leaks (or prove their absence), and (3) analyzing
-      the security of (hardware and software) Spectre&rsquo;s countermeasures.</p>
+<p>This project aims at constructing techniques and tools for automatically
+inferring and learning high-level models of micro-architectural components (like caches and
+prefetchers) directly from timing measurements.</p>
 
     </div>
 
@@ -542,175 +539,9 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
             <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
   <span itemprop="author">
-    <strong>Marco Guarnieri</strong>, Boris Koepf, Jan Reineke, Pepe Vila</span>.
-  <a href="/publication/sp2021/" itemprop="name">Hardware-Software Contracts for Secure Speculation</a>.
-  In <em>S&amp;P</em>,
-  2021.
-  <p>
-
-
-
-
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/sp2021.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/sp2021/sp2021.bib">
-  Cite
-</button>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://spectector.github.io" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/speculative-execution/">
-    Project
-  </a>
-  
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/hwsw-codesign/">
-    Project
-  </a>
-  
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/NmJs2UxeZKo" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2006.03841" target="_blank" rel="noopener">
-    
-    Extended version (arXiv)
-  </a>
-
-</p>
-</div>
-
-          
-        
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Marco Patrignani, <strong>Marco Guarnieri</strong></span>.
-  <a href="/publication/ccs2021/" itemprop="name">Exorcising Spectres with Secure Compilers</a>.
-  In <em>CCS</em>,
-  2021.
-  <p>
-
-
-
-
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/ccs2021.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/ccs2021/ccs2021.bib">
-  Cite
-</button>
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/speculative-execution/">
-    Project
-  </a>
-  
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1910.08607" target="_blank" rel="noopener">
-    
-    Extended version (arXiv)
-  </a>
-
-</p>
-</div>
-
-          
-        
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    <strong>Marco Guarnieri</strong>, Boris Koepf, José F. Morales, Jan Reineke, Andrés Sánchez</span>.
-  <a href="/publication/sp2020/" itemprop="name">SPECTECTOR: Principled detection of speculative information flows</a>.
-  In <em>S&amp;P</em>,
+    Pepe Vila, Pierre Ganty, <strong>Marco Guarnieri</strong>, Boris Koepf</span>.
+  <a href="/publication/pldi2020/" itemprop="name">CacheQuery: Learning Replacement Policies from Hardware Caches</a>.
+  In <em>PLDI</em>,
   2020.
   <p>
 
@@ -725,14 +556,14 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/sp2020.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/pldi2020.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/sp2020/sp2020.bib">
+        data-filename="/publication/pldi2020/pldi2020.bib">
   Cite
 </button>
 
@@ -741,7 +572,7 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://spectector.github.io" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/cgvwzq/cachequery/" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -749,40 +580,16 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
 
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/speculative-execution/">
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/learning-uarch-models/">
     Project
   </a>
   
 
 
 
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/sp2020_poster.pdf" target="_blank" rel="noopener">
-  Poster
-</a>
 
 
 
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/sp2020_slides.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/FjscRa0ocy0" target="_blank" rel="noopener">
-  Video
-</a>
 
 
 
@@ -798,7 +605,7 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1812.08639" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1912.09770" target="_blank" rel="noopener">
     
     Extended version (arXiv)
   </a>
@@ -814,9 +621,81 @@ Goals This project&rsquo;s goals are (1) building the theoretical foundations fo
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/QMCUcFI2wTI" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/cgvwzq/polca/" target="_blank" rel="noopener">
     
-    Preview video
+    Additional code
+  </a>
+
+</p>
+</div>
+
+          
+        
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <span itemprop="author">
+    Pepe Vila, Andreas Abel, <strong>Marco Guarnieri</strong>, Boris Koepf, Jan Reineke</span>.
+  <a href="/publication/flushgeist/" itemprop="name">Flushgeist: Cache Leaks from Beyond the Flush</a>.
+  Technical report,
+  2020.
+  <p>
+
+
+
+
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/papers/flushgeist.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/flushgeist/flushgeist.bib">
+  Cite
+</button>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/learning-uarch-models/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2005.13853" target="_blank" rel="noopener">
+    
+    Extended version (arXiv)
   </a>
 
 </p>

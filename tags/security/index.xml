@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Marco Guarnieri</copyright>
-    <lastBuildDate>Wed, 12 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mguarnieri.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hardware/software co-design for secure speculation</title>
+      <link>https://mguarnieri.github.io/project/hwsw-codesign/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/project/hwsw-codesign/</guid>
+      <description>Speculative execution attacks, such as the recent Spectre attacks, are a recent class of security threats that affect almost all modern processors (that is, millions of IT systems). These attacks exploit the hardware side-effects of a CPU optimization called speculative execution to break fundamental security assumptions on how programs are executed and to leak sensitive information.
+Hardware/software co-design is an essential principle for building practical systems that are secure against these attacks.</description>
+    </item>
     
     <item>
       <title>Reasoning about speculative execution attacks</title>
@@ -18,8 +28,18 @@
       <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://mguarnieri.github.io/project/speculative-execution/</guid>
-      <description>Speculative execution attacks, like the recent SPECTRE attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
-Goals This project&amp;rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) SPECTRE&amp;rsquo;s countermeasures.</description>
+      <description>Speculative execution attacks, like the recent Spectre attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
+Goals This project&amp;rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) Spectre&amp;rsquo;s countermeasures.</description>
+    </item>
+    
+    <item>
+      <title>Automatically learning micro-architectural models</title>
+      <link>https://mguarnieri.github.io/project/learning-uarch-models/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mguarnieri.github.io/project/learning-uarch-models/</guid>
+      <description>Understanding the timing behavior of modern CPUs is crucial for optimizing code and for ensuring timing-related security and safety properties. Unfortunately, the timing behavior of today’s high-performance processors depends on subtle and poorly documented details of their micro-architecture, which has triggered laborious efforts from researchers to build models of different components.
+Goals This project aims at constructing techniques and tools for automatically inferring and learning high-level models of micro-architectural components (like caches and prefetchers) directly from timing measurements.</description>
     </item>
     
     <item>
