@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Micro-architectural attacks | Marco Guarnieri</title>
+    <link>https://mguarnieri.github.io/tag/micro-architectural-attacks/</link>
+      <atom:link href="https://mguarnieri.github.io/tag/micro-architectural-attacks/index.xml" rel="self" type="application/rss+xml" />
+    <description>Micro-architectural attacks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Micro-architectural attacks</title>
+      <link>https://mguarnieri.github.io/tag/micro-architectural-attacks/</link>
+    </image>
+    
+    <item>
+      <title>Hardware/software co-design for secure speculation</title>
+      <link>https://mguarnieri.github.io/project/hwsw-codesign/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/project/hwsw-codesign/</guid>
+      <description>&lt;p&gt;Speculative execution attacks, such as the recent Spectre attacks, are a recent
+class of security threats that affect almost all modern processors (that is,
+millions of IT systems). These attacks exploit the hardware side-effects of a
+CPU optimization called speculative execution to break fundamental security
+assumptions on how programs are executed and to leak sensitive information.&lt;/p&gt;
+&lt;p&gt;Hardware/software co-design is an essential principle for building practical
+systems that are secure against these attacks. Following this principle,
+hardware and software should collaborate to thwart speculative execution
+attacks. Hardware platforms should provide precise security guarantees and
+expose control on the internal microarchitectural state. Software, instead,
+should leverage these guarantees to achieve end-to-end security. Unfortunately,
+we currently lack foundations, guiding principles, and tools for co-design for
+security.&lt;/p&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;This project will develop foundations, models, and tools for enabling co-design for
+secure speculation. The project will revolve around the notion of
+hardware/software security contract, an abstraction enabling the distribution of
+security obligations between hardware and software. The project will provide
+developers with languages for specifying security contracts as well as
+techniques for automatically determining whether proposals for secure
+speculation effectively prevent speculative execution attacks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reasoning about speculative execution attacks</title>
+      <link>https://mguarnieri.github.io/project/speculative-execution/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/project/speculative-execution/</guid>
+      <description>&lt;p&gt;Speculative execution attacks, like the recent Spectre attacks, exploit the
+persistent microarchitectural side-effects of speculatively executed
+instructions. These attacks affect all modern general-purpose CPUs and
+pose a serious threat against platforms with multiple tenants. However, we
+still lack a precise characterization of security against speculative
+execution attacks. Such a characterization is a prerequisite for reasoning
+about the effectiveness and security of countermeasures.&lt;/p&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;This project&amp;rsquo;s goals are (1) building the theoretical foundations for reasoning
+about speculative execution attacks, (2) developing techniques for
+detecting speculative leaks (or prove their absence), and (3) analyzing
+the security of (hardware and software) Spectre&amp;rsquo;s countermeasures.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automatically learning micro-architectural models</title>
+      <link>https://mguarnieri.github.io/project/learning-uarch-models/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/project/learning-uarch-models/</guid>
+      <description>&lt;p&gt;Understanding the timing behavior of modern CPUs is crucial for optimizing code
+and for ensuring timing-related security and safety properties. Unfortunately,
+the timing behavior of today’s high-performance processors depends on subtle and
+poorly documented details of their micro-architecture, which has triggered
+laborious efforts from researchers to build models of different components.&lt;/p&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;This project aims at constructing techniques and tools for automatically
+inferring and learning high-level models of micro-architectural components (like caches and
+prefetchers) directly from timing measurements.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Access Control | Marco Guarnieri</title>
+    <link>https://mguarnieri.github.io/tag/access-control/</link>
+      <atom:link href="https://mguarnieri.github.io/tag/access-control/index.xml" rel="self" type="application/rss+xml" />
+    <description>Access Control</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Access Control</title>
+      <link>https://mguarnieri.github.io/tag/access-control/</link>
+    </image>
+    
+    <item>
+      <title>Provably secure access and inference control in databases</title>
+      <link>https://mguarnieri.github.io/project/dbac-foundations/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/project/dbac-foundations/</guid>
+      <description>&lt;p&gt;Databases often store and manage sensitive data. Regulating the access to databases is, therefore, essential. To this end, researchers have developed both &lt;em&gt;access control&lt;/em&gt; and &lt;em&gt;inference control&lt;/em&gt; mechanisms. Ideally, all these mechanisms should come with security proofs clearly stating what attacks they are designed to thwart, as with security mechanisms in other domains.
+Unfortunately, this is far from reality. Existing mechanisms are implemented in an ad hoc fashion, with neither precise security guarantees nor the means to verify them. This has immediate consequences as existing mechanisms are inadequate to secure modern databases and are susceptible to attacks.&lt;/p&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;This project’s goals are (1) research and develop solid theoretical foundations for access and inference control in modern database systems, and (2) leverage these foundations to design security mechanisms that are provably secure.
+More strongly, we argue that all database security mechanisms must offer security proofs to clearly state what attacks and attackers they are designed to thwart.&lt;/p&gt;
+&lt;p&gt;Our approach is to formally define realistic attacker models and adequate security properties, complemented by a formal operational semantics of databases as a basis for the security proofs, and develop enforcement mechanisms and prove their security. As a result, the resulting mechanisms will &lt;strong&gt;provide precise security guarantees&lt;/strong&gt; and &lt;strong&gt;provably prevent attacks&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,61 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Marco Guarnieri</title>
+    <title>Tags | Marco Guarnieri</title>
     <link>https://mguarnieri.github.io/tags/</link>
-    <description>Recent content in Tags on Marco Guarnieri</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 Marco Guarnieri</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://mguarnieri.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Access Control</title>
-      <link>https://mguarnieri.github.io/tags/access-control/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://mguarnieri.github.io/tags/access-control/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Databases</title>
-      <link>https://mguarnieri.github.io/tags/databases/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://mguarnieri.github.io/tags/databases/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Inference Control</title>
-      <link>https://mguarnieri.github.io/tags/inference-control/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://mguarnieri.github.io/tags/inference-control/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Micro-architectural attacks</title>
-      <link>https://mguarnieri.github.io/tags/micro-architectural-attacks/</link>
-      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mguarnieri.github.io/tags/micro-architectural-attacks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Security</title>
-      <link>https://mguarnieri.github.io/tags/security/</link>
-      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mguarnieri.github.io/tags/security/</guid>
-      <description></description>
-    </item>
+      <atom:link href="https://mguarnieri.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Tags</title>
+      <link>https://mguarnieri.github.io/tags/</link>
+    </image>
     
   </channel>
 </rss>

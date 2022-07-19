@@ -1,54 +1,95 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Marco Guarnieri</title>
+    <title>Projects | Marco Guarnieri</title>
     <link>https://mguarnieri.github.io/project/</link>
-    <description>Recent content in Projects on Marco Guarnieri</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 Marco Guarnieri</copyright>
-    <lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://mguarnieri.github.io/project/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://mguarnieri.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>https://mguarnieri.github.io/project/</link>
+    </image>
     
     <item>
       <title>Hardware/software co-design for secure speculation</title>
       <link>https://mguarnieri.github.io/project/hwsw-codesign/</link>
       <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/project/hwsw-codesign/</guid>
-      <description>Speculative execution attacks, such as the recent Spectre attacks, are a recent class of security threats that affect almost all modern processors (that is, millions of IT systems). These attacks exploit the hardware side-effects of a CPU optimization called speculative execution to break fundamental security assumptions on how programs are executed and to leak sensitive information.
-Hardware/software co-design is an essential principle for building practical systems that are secure against these attacks.</description>
+      <description>&lt;p&gt;Speculative execution attacks, such as the recent Spectre attacks, are a recent
+class of security threats that affect almost all modern processors (that is,
+millions of IT systems). These attacks exploit the hardware side-effects of a
+CPU optimization called speculative execution to break fundamental security
+assumptions on how programs are executed and to leak sensitive information.&lt;/p&gt;
+&lt;p&gt;Hardware/software co-design is an essential principle for building practical
+systems that are secure against these attacks. Following this principle,
+hardware and software should collaborate to thwart speculative execution
+attacks. Hardware platforms should provide precise security guarantees and
+expose control on the internal microarchitectural state. Software, instead,
+should leverage these guarantees to achieve end-to-end security. Unfortunately,
+we currently lack foundations, guiding principles, and tools for co-design for
+security.&lt;/p&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;This project will develop foundations, models, and tools for enabling co-design for
+secure speculation. The project will revolve around the notion of
+hardware/software security contract, an abstraction enabling the distribution of
+security obligations between hardware and software. The project will provide
+developers with languages for specifying security contracts as well as
+techniques for automatically determining whether proposals for secure
+speculation effectively prevent speculative execution attacks.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Reasoning about speculative execution attacks</title>
       <link>https://mguarnieri.github.io/project/speculative-execution/</link>
       <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/project/speculative-execution/</guid>
-      <description>Speculative execution attacks, like the recent Spectre attacks, exploit the persistent microarchitectural side-effects of speculatively executed instructions. These attacks affect all modern general-purpose CPUs and pose a serious threat against platforms with multiple tenants. However, we still lack a precise characterization of security against speculative execution attacks. Such a characterization is a prerequisite for reasoning about the effectiveness and security of countermeasures.
-Goals This project&amp;rsquo;s goals are (1) building the theoretical foundations for reasoning about speculative execution attacks, (2) developing techniques for detecting speculative leaks (or prove their absence), and (3) analyzing the security of (hardware and software) Spectre&amp;rsquo;s countermeasures.</description>
+      <description>&lt;p&gt;Speculative execution attacks, like the recent Spectre attacks, exploit the
+persistent microarchitectural side-effects of speculatively executed
+instructions. These attacks affect all modern general-purpose CPUs and
+pose a serious threat against platforms with multiple tenants. However, we
+still lack a precise characterization of security against speculative
+execution attacks. Such a characterization is a prerequisite for reasoning
+about the effectiveness and security of countermeasures.&lt;/p&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;This project&amp;rsquo;s goals are (1) building the theoretical foundations for reasoning
+about speculative execution attacks, (2) developing techniques for
+detecting speculative leaks (or prove their absence), and (3) analyzing
+the security of (hardware and software) Spectre&amp;rsquo;s countermeasures.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Automatically learning micro-architectural models</title>
       <link>https://mguarnieri.github.io/project/learning-uarch-models/</link>
       <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/project/learning-uarch-models/</guid>
-      <description>Understanding the timing behavior of modern CPUs is crucial for optimizing code and for ensuring timing-related security and safety properties. Unfortunately, the timing behavior of today’s high-performance processors depends on subtle and poorly documented details of their micro-architecture, which has triggered laborious efforts from researchers to build models of different components.
-Goals This project aims at constructing techniques and tools for automatically inferring and learning high-level models of micro-architectural components (like caches and prefetchers) directly from timing measurements.</description>
+      <description>&lt;p&gt;Understanding the timing behavior of modern CPUs is crucial for optimizing code
+and for ensuring timing-related security and safety properties. Unfortunately,
+the timing behavior of today’s high-performance processors depends on subtle and
+poorly documented details of their micro-architecture, which has triggered
+laborious efforts from researchers to build models of different components.&lt;/p&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;This project aims at constructing techniques and tools for automatically
+inferring and learning high-level models of micro-architectural components (like caches and
+prefetchers) directly from timing measurements.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Provably secure access and inference control in databases</title>
       <link>https://mguarnieri.github.io/project/dbac-foundations/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/project/dbac-foundations/</guid>
-      <description>Databases often store and manage sensitive data. Regulating the access to databases is, therefore, essential. To this end, researchers have developed both access control and inference control mechanisms. Ideally, all these mechanisms should come with security proofs clearly stating what attacks they are designed to thwart, as with security mechanisms in other domains. Unfortunately, this is far from reality. Existing mechanisms are implemented in an ad hoc fashion, with neither precise security guarantees nor the means to verify them.</description>
+      <description>&lt;p&gt;Databases often store and manage sensitive data. Regulating the access to databases is, therefore, essential. To this end, researchers have developed both &lt;em&gt;access control&lt;/em&gt; and &lt;em&gt;inference control&lt;/em&gt; mechanisms. Ideally, all these mechanisms should come with security proofs clearly stating what attacks they are designed to thwart, as with security mechanisms in other domains.
+Unfortunately, this is far from reality. Existing mechanisms are implemented in an ad hoc fashion, with neither precise security guarantees nor the means to verify them. This has immediate consequences as existing mechanisms are inadequate to secure modern databases and are susceptible to attacks.&lt;/p&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;This project’s goals are (1) research and develop solid theoretical foundations for access and inference control in modern database systems, and (2) leverage these foundations to design security mechanisms that are provably secure.
+More strongly, we argue that all database security mechanisms must offer security proofs to clearly state what attacks and attackers they are designed to thwart.&lt;/p&gt;
+&lt;p&gt;Our approach is to formally define realistic attacker models and adequate security properties, complemented by a formal operational semantics of databases as a basis for the security proofs, and develop enforcement mechanisms and prove their security. As a result, the resulting mechanisms will &lt;strong&gt;provide precise security guarantees&lt;/strong&gt; and &lt;strong&gt;provably prevent attacks&lt;/strong&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

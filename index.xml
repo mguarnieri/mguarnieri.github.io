@@ -1,20 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Marco Guarnieri on Marco Guarnieri</title>
+    <title>Marco Guarnieri</title>
     <link>https://mguarnieri.github.io/</link>
-    <description>Recent content in Marco Guarnieri on Marco Guarnieri</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 Marco Guarnieri</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+      <atom:link href="https://mguarnieri.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Marco Guarnieri</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 04 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Marco Guarnieri</title>
+      <link>https://mguarnieri.github.io/</link>
+    </image>
+    
+    <item>
+      <title>Automatic Detection of Speculative Execution Combinations</title>
+      <link>https://mguarnieri.github.io/publication/ccs2022/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/ccs2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anosy: Approximated Knowledge Synthesis with Refinement Types for Declassification</title>
+      <link>https://mguarnieri.github.io/publication/pldi2022/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/pldi2022/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Hardware-Software Contracts for Secure Speculation</title>
       <link>https://mguarnieri.github.io/publication/sp2021/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/publication/sp2021/</guid>
       <description></description>
     </item>
@@ -23,7 +40,6 @@
       <title>Exorcising Spectres with Secure Compilers</title>
       <link>https://mguarnieri.github.io/publication/ccs2021/</link>
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/publication/ccs2021/</guid>
       <description></description>
     </item>
@@ -32,8 +48,15 @@
       <title>Contract-aware Secure Compilation</title>
       <link>https://mguarnieri.github.io/publication/casco/</link>
       <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/publication/casco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>I Told You Tomorrow: Practical Time-Locked Secrets using Smart Contracts</title>
+      <link>https://mguarnieri.github.io/publication/ares2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/ares2021/</guid>
       <description></description>
     </item>
     
@@ -41,16 +64,12 @@
       <title>Hardware/software co-design for secure speculation</title>
       <link>https://mguarnieri.github.io/project/hwsw-codesign/</link>
       <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/project/hwsw-codesign/</guid>
-      <description>
-
-&lt;p&gt;Speculative execution attacks, such as the recent Spectre attacks, are a recent
+      <description>&lt;p&gt;Speculative execution attacks, such as the recent Spectre attacks, are a recent
 class of security threats that affect almost all modern processors (that is,
 millions of IT systems). These attacks exploit the hardware side-effects of a
 CPU optimization called speculative execution to break fundamental security
 assumptions on how programs are executed and to leak sensitive information.&lt;/p&gt;
-
 &lt;p&gt;Hardware/software co-design is an essential principle for building practical
 systems that are secure against these attacks. Following this principle,
 hardware and software should collaborate to thwart speculative execution
@@ -59,9 +78,7 @@ expose control on the internal microarchitectural state. Software, instead,
 should leverage these guarantees to achieve end-to-end security. Unfortunately,
 we currently lack foundations, guiding principles, and tools for co-design for
 security.&lt;/p&gt;
-
 &lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
-
 &lt;p&gt;This project will develop foundations, models, and tools for enabling co-design for
 secure speculation. The project will revolve around the notion of
 hardware/software security contract, an abstraction enabling the distribution of
@@ -73,10 +90,17 @@ speculation effectively prevent speculative execution attacks.&lt;/p&gt;
     </item>
     
     <item>
+      <title>SPECTECTOR: Principled detection of speculative information flows</title>
+      <link>https://mguarnieri.github.io/publication/sp2020/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/sp2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>CacheQuery: Learning Replacement Policies from Hardware Caches</title>
       <link>https://mguarnieri.github.io/publication/pldi2020/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/publication/pldi2020/</guid>
       <description></description>
     </item>
@@ -85,17 +109,7 @@ speculation effectively prevent speculative execution attacks.&lt;/p&gt;
       <title>Flushgeist: Cache Leaks from Beyond the Flush</title>
       <link>https://mguarnieri.github.io/publication/flushgeist/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/publication/flushgeist/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SPECTECTOR: Principled detection of speculative information flows</title>
-      <link>https://mguarnieri.github.io/publication/sp2020/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mguarnieri.github.io/publication/sp2020/</guid>
       <description></description>
     </item>
     
@@ -103,7 +117,6 @@ speculation effectively prevent speculative execution attacks.&lt;/p&gt;
       <title>Information-Flow Control for Database-backed Applications</title>
       <link>https://mguarnieri.github.io/publication/eurosp2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/publication/eurosp2019/</guid>
       <description></description>
     </item>
@@ -112,24 +125,19 @@ speculation effectively prevent speculative execution attacks.&lt;/p&gt;
       <title>Reasoning about speculative execution attacks</title>
       <link>https://mguarnieri.github.io/project/speculative-execution/</link>
       <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/project/speculative-execution/</guid>
-      <description>
-
-&lt;p&gt;Speculative execution attacks, like the recent Spectre attacks, exploit the
-      persistent microarchitectural side-effects of speculatively executed
-      instructions. These attacks affect all modern general-purpose CPUs and
-      pose a serious threat against platforms with multiple tenants. However, we
-      still lack a precise characterization of security against speculative
-      execution attacks. Such a characterization is a prerequisite for reasoning
-      about the effectiveness and security of countermeasures.&lt;/p&gt;
-
+      <description>&lt;p&gt;Speculative execution attacks, like the recent Spectre attacks, exploit the
+persistent microarchitectural side-effects of speculatively executed
+instructions. These attacks affect all modern general-purpose CPUs and
+pose a serious threat against platforms with multiple tenants. However, we
+still lack a precise characterization of security against speculative
+execution attacks. Such a characterization is a prerequisite for reasoning
+about the effectiveness and security of countermeasures.&lt;/p&gt;
 &lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
-
 &lt;p&gt;This project&amp;rsquo;s goals are (1) building the theoretical foundations for reasoning
-      about speculative execution attacks, (2) developing techniques for
-      detecting speculative leaks (or prove their absence), and (3) analyzing
-      the security of (hardware and software) Spectre&amp;rsquo;s countermeasures.&lt;/p&gt;
+about speculative execution attacks, (2) developing techniques for
+detecting speculative leaks (or prove their absence), and (3) analyzing
+the security of (hardware and software) Spectre&amp;rsquo;s countermeasures.&lt;/p&gt;
 </description>
     </item>
     
@@ -137,18 +145,13 @@ speculation effectively prevent speculative execution attacks.&lt;/p&gt;
       <title>Automatically learning micro-architectural models</title>
       <link>https://mguarnieri.github.io/project/learning-uarch-models/</link>
       <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/project/learning-uarch-models/</guid>
-      <description>
-
-&lt;p&gt;Understanding the timing behavior of modern CPUs is crucial for optimizing code
+      <description>&lt;p&gt;Understanding the timing behavior of modern CPUs is crucial for optimizing code
 and for ensuring timing-related security and safety properties. Unfortunately,
 the timing behavior of today’s high-performance processors depends on subtle and
 poorly documented details of their micro-architecture, which has triggered
 laborious efforts from researchers to build models of different components.&lt;/p&gt;
-
 &lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
-
 &lt;p&gt;This project aims at constructing techniques and tools for automatically
 inferring and learning high-level models of micro-architectural components (like caches and
 prefetchers) directly from timing measurements.&lt;/p&gt;
@@ -159,7 +162,6 @@ prefetchers) directly from timing measurements.&lt;/p&gt;
       <title>Synthesis of Probabilistic Privacy Enforcement</title>
       <link>https://mguarnieri.github.io/publication/ccs2017/</link>
       <pubDate>Fri, 03 Mar 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/publication/ccs2017/</guid>
       <description></description>
     </item>
@@ -168,7 +170,6 @@ prefetchers) directly from timing measurements.&lt;/p&gt;
       <title>Formal Foundations for Access and Inference Control in Databases</title>
       <link>https://mguarnieri.github.io/publication/phdthesis/</link>
       <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/publication/phdthesis/</guid>
       <description></description>
     </item>
@@ -177,7 +178,6 @@ prefetchers) directly from timing measurements.&lt;/p&gt;
       <title>Securing Databases from Probabilistic Inference</title>
       <link>https://mguarnieri.github.io/publication/csf2017/</link>
       <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/publication/csf2017/</guid>
       <description></description>
     </item>
@@ -186,7 +186,6 @@ prefetchers) directly from timing measurements.&lt;/p&gt;
       <title>Test Execution Checkpointing for Web Applications</title>
       <link>https://mguarnieri.github.io/publication/issta2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/publication/issta2017/</guid>
       <description></description>
     </item>
@@ -195,20 +194,134 @@ prefetchers) directly from timing measurements.&lt;/p&gt;
       <title>Provably secure access and inference control in databases</title>
       <link>https://mguarnieri.github.io/project/dbac-foundations/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://mguarnieri.github.io/project/dbac-foundations/</guid>
-      <description>
-
-&lt;p&gt;Databases often store and manage sensitive data. Regulating the access to databases is, therefore, essential. To this end, researchers have developed both &lt;em&gt;access control&lt;/em&gt; and &lt;em&gt;inference control&lt;/em&gt; mechanisms. Ideally, all these mechanisms should come with security proofs clearly stating what attacks they are designed to thwart, as with security mechanisms in other domains.
+      <description>&lt;p&gt;Databases often store and manage sensitive data. Regulating the access to databases is, therefore, essential. To this end, researchers have developed both &lt;em&gt;access control&lt;/em&gt; and &lt;em&gt;inference control&lt;/em&gt; mechanisms. Ideally, all these mechanisms should come with security proofs clearly stating what attacks they are designed to thwart, as with security mechanisms in other domains.
 Unfortunately, this is far from reality. Existing mechanisms are implemented in an ad hoc fashion, with neither precise security guarantees nor the means to verify them. This has immediate consequences as existing mechanisms are inadequate to secure modern databases and are susceptible to attacks.&lt;/p&gt;
-
 &lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
-
 &lt;p&gt;This project’s goals are (1) research and develop solid theoretical foundations for access and inference control in modern database systems, and (2) leverage these foundations to design security mechanisms that are provably secure.
 More strongly, we argue that all database security mechanisms must offer security proofs to clearly state what attacks and attackers they are designed to thwart.&lt;/p&gt;
-
 &lt;p&gt;Our approach is to formally define realistic attacker models and adequate security properties, complemented by a formal operational semantics of databases as a basis for the security proofs, and develop enforcement mechanisms and prove their security. As a result, the resulting mechanisms will &lt;strong&gt;provide precise security guarantees&lt;/strong&gt; and &lt;strong&gt;provably prevent attacks&lt;/strong&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Strong and Provably Secure Database Access Control</title>
+      <link>https://mguarnieri.github.io/publication/eurosp2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/eurosp2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimal Security-Aware Query Processing</title>
+      <link>https://mguarnieri.github.io/publication/vldb2014/</link>
+      <pubDate>Thu, 05 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/vldb2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Model-Driven Approach for Securing Software Architectures</title>
+      <link>https://mguarnieri.github.io/publication/secrypt2013/</link>
+      <pubDate>Thu, 10 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/secrypt2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Notion of Redundancy in Access Control Policies</title>
+      <link>https://mguarnieri.github.io/publication/sacmat2013/</link>
+      <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/sacmat2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AURORA: AUtomatic RObustness coveRage Analysis Tool</title>
+      <link>https://mguarnieri.github.io/publication/icst2013/</link>
+      <pubDate>Thu, 08 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/icst2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conflict Detection in Security Policies using Semantic Web Technology</title>
+      <link>https://mguarnieri.github.io/publication/estel2012/</link>
+      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/estel2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards Assisted Remediation of Security Vulnerabilities</title>
+      <link>https://mguarnieri.github.io/publication/securware2012/</link>
+      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/securware2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automated Management and Analysis of Security Policies using Eclipse</title>
+      <link>https://mguarnieri.github.io/publication/eclipseit2012/</link>
+      <pubDate>Sun, 09 Sep 2012 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/eclipseit2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evolutionary Testing of PHP Web Applications with WETT</title>
+      <link>https://mguarnieri.github.io/publication/ssbse2012/</link>
+      <pubDate>Tue, 05 Jun 2012 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/ssbse2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Domain Specific Language for Modeling Differential Constraints of Mobile Robots</title>
+      <link>https://mguarnieri.github.io/publication/robotica2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/robotica2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Extending Coverage Criteria by Evaluating their Robustness to Code Structure Changes</title>
+      <link>https://mguarnieri.github.io/publication/ictss2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/ictss2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model-Driven Testing for Web Applications using Abstract State Machines</title>
+      <link>https://mguarnieri.github.io/publication/mdwe2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/mdwe2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Eclipse based environment for conformance testing by FSMs</title>
+      <link>https://mguarnieri.github.io/publication/eclipseit2011fsm/</link>
+      <pubDate>Fri, 09 Sep 2011 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/eclipseit2011fsm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security vulnerabilities detection and protection using Eclipse</title>
+      <link>https://mguarnieri.github.io/publication/eclipseit2011static/</link>
+      <pubDate>Mon, 08 Aug 2011 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/eclipseit2011static/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mguarnieri.github.io/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/admin/config.yml</guid>
+      <description></description>
     </item>
     
   </channel>
