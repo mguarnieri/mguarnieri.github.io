@@ -64,7 +64,7 @@
   
     
   
-  <meta name="description" content="Modern processors employ different prediction mechanisms to speculate over different kinds of instructions. Attackers can exploit these prediction mechanisms simultaneously in order to trigger leaks about speculatively-accessed data. Thus, sound reasoning about such speculative leaks requires accounting for all potential mechanisms of speculation. Unfortunately, existing formal models only support reasoning about fixed, hard-coded mechanisms of speculation, with no simple support to extend said reasoning to new mechanisms. In this paper we develop a framework for reasoning about composed speculative semantics that capture speculation due to different mechanisms and implement it as part of the Spectector verification tool. We implement novel semantics for speculating over store and return instructions and combine them with the semantics for speculating over branches. Our framework yields speculative semantics for speculating over any combination of those instructions that are secure by construction, i.e., we obtain these security guarantees for free. The implementation of our novel semantics in Spectector let us verify existing codebases that are vulnerable to Spectre v1, Spectre v4, and Spectre v5 vulnerabilities as well as new snippets that are only vulnerable to their compositions." />
+  <meta name="description" content="Modern processors employ different speculation mechanisms to speculate over different kinds of instructions. Attackers can exploit these  mechanisms simultaneously in order to trigger leaks of speculatively-accessed data. Thus, sound reasoning about such speculative leaks requires accounting for all potential speculation mechanisms. Unfortunately, existing formal models only support reasoning about fixed, hard-coded speculation mechanisms, with no simple support to extend said reasoning to new mechanisms. In this paper we develop a framework for reasoning about composed speculative semantics that capture speculation due to different mechanisms and implement it as part of the Spectector verification tool. We implement novel semantics for speculating over store and return instructions and combine them with the semantics for speculating over branches. Our framework yields speculative semantics for speculating over any combination of those instructions that are secure by construction, i.e., we obtain these security guarantees for free. The implementation of our novel semantics in Spectector let us verify programs that are vulnerable to Spectre v1, Spectre v4, and Spectre v5 vulnerabilities as well as new snippets that are only vulnerable to their compositions." />
 
   
   <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/publication/ccs2022/" />
@@ -310,7 +310,7 @@
   <meta property="og:site_name" content="Marco Guarnieri" />
   <meta property="og:url" content="https://mguarnieri.github.io/publication/ccs2022/" />
   <meta property="og:title" content="Automatic Detection of Speculative Execution Combinations | Marco Guarnieri" />
-  <meta property="og:description" content="Modern processors employ different prediction mechanisms to speculate over different kinds of instructions. Attackers can exploit these prediction mechanisms simultaneously in order to trigger leaks about speculatively-accessed data. Thus, sound reasoning about such speculative leaks requires accounting for all potential mechanisms of speculation. Unfortunately, existing formal models only support reasoning about fixed, hard-coded mechanisms of speculation, with no simple support to extend said reasoning to new mechanisms. In this paper we develop a framework for reasoning about composed speculative semantics that capture speculation due to different mechanisms and implement it as part of the Spectector verification tool. We implement novel semantics for speculating over store and return instructions and combine them with the semantics for speculating over branches. Our framework yields speculative semantics for speculating over any combination of those instructions that are secure by construction, i.e., we obtain these security guarantees for free. The implementation of our novel semantics in Spectector let us verify existing codebases that are vulnerable to Spectre v1, Spectre v4, and Spectre v5 vulnerabilities as well as new snippets that are only vulnerable to their compositions." /><meta property="og:image" content="https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:description" content="Modern processors employ different speculation mechanisms to speculate over different kinds of instructions. Attackers can exploit these  mechanisms simultaneously in order to trigger leaks of speculatively-accessed data. Thus, sound reasoning about such speculative leaks requires accounting for all potential speculation mechanisms. Unfortunately, existing formal models only support reasoning about fixed, hard-coded speculation mechanisms, with no simple support to extend said reasoning to new mechanisms. In this paper we develop a framework for reasoning about composed speculative semantics that capture speculation due to different mechanisms and implement it as part of the Spectector verification tool. We implement novel semantics for speculating over store and return instructions and combine them with the semantics for speculating over branches. Our framework yields speculative semantics for speculating over any combination of those instructions that are secure by construction, i.e., we obtain these security guarantees for free. The implementation of our novel semantics in Spectector let us verify programs that are vulnerable to Spectre v1, Spectre v4, and Spectre v5 vulnerabilities as well as new snippets that are only vulnerable to their compositions." /><meta property="og:image" content="https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -361,7 +361,7 @@
       "url": "https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Modern processors employ different prediction mechanisms to speculate over different kinds of instructions. Attackers can exploit these prediction mechanisms simultaneously in order to trigger leaks about speculatively-accessed data. Thus, sound reasoning about such speculative leaks requires accounting for all potential mechanisms of speculation. Unfortunately, existing formal models only support reasoning about fixed, hard-coded mechanisms of speculation, with no simple support to extend said reasoning to new mechanisms. In this paper we develop a framework for reasoning about composed speculative semantics that capture speculation due to different mechanisms and implement it as part of the Spectector verification tool. We implement novel semantics for speculating over store and return instructions and combine them with the semantics for speculating over branches. Our framework yields speculative semantics for speculating over any combination of those instructions that are secure by construction, i.e., we obtain these security guarantees for free. The implementation of our novel semantics in Spectector let us verify existing codebases that are vulnerable to Spectre v1, Spectre v4, and Spectre v5 vulnerabilities as well as new snippets that are only vulnerable to their compositions."
+  "description": "Modern processors employ different speculation mechanisms to speculate over different kinds of instructions. Attackers can exploit these  mechanisms simultaneously in order to trigger leaks of speculatively-accessed data. Thus, sound reasoning about such speculative leaks requires accounting for all potential speculation mechanisms. Unfortunately, existing formal models only support reasoning about fixed, hard-coded speculation mechanisms, with no simple support to extend said reasoning to new mechanisms. In this paper we develop a framework for reasoning about composed speculative semantics that capture speculation due to different mechanisms and implement it as part of the Spectector verification tool. We implement novel semantics for speculating over store and return instructions and combine them with the semantics for speculating over branches. Our framework yields speculative semantics for speculating over any combination of those instructions that are secure by construction, i.e., we obtain these security guarantees for free. The implementation of our novel semantics in Spectector let us verify programs that are vulnerable to Spectre v1, Spectre v4, and Spectre v5 vulnerabilities as well as new snippets that are only vulnerable to their compositions."
 }
 </script>
 
@@ -879,6 +879,10 @@
 
 
 
+<a class="btn btn-outline-primary btn-page-header" href="/publication/ccs2022/ccs2022.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
@@ -905,6 +909,20 @@
 
 
 
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/1910.08607" target="_blank" rel="noopener">
+    Extended version (arXiv)</a>
+
 
 </div>
 
@@ -918,7 +936,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Modern processors employ different prediction mechanisms to speculate over different kinds of instructions. Attackers can exploit these prediction mechanisms simultaneously in order to trigger leaks about speculatively-accessed data. Thus, sound reasoning about such speculative leaks requires accounting for all potential mechanisms of speculation. Unfortunately, existing formal models only support reasoning about fixed, hard-coded mechanisms of speculation, with no simple support to extend said reasoning to new mechanisms. In this paper we develop a framework for reasoning about composed speculative semantics that capture speculation due to different mechanisms and implement it as part of the Spectector verification tool. We implement novel semantics for speculating over store and return instructions and combine them with the semantics for speculating over branches. Our framework yields speculative semantics for speculating over any combination of those instructions that are secure by construction, i.e., we obtain these security guarantees for free. The implementation of our novel semantics in Spectector let us verify existing codebases that are vulnerable to Spectre v1, Spectre v4, and Spectre v5 vulnerabilities as well as new snippets that are only vulnerable to their compositions.</p>
+    <p class="pub-abstract">Modern processors employ different speculation mechanisms to speculate over different kinds of instructions. Attackers can exploit these  mechanisms simultaneously in order to trigger leaks of speculatively-accessed data. Thus, sound reasoning about such speculative leaks requires accounting for all potential speculation mechanisms. Unfortunately, existing formal models only support reasoning about fixed, hard-coded speculation mechanisms, with no simple support to extend said reasoning to new mechanisms. In this paper we develop a framework for reasoning about composed speculative semantics that capture speculation due to different mechanisms and implement it as part of the Spectector verification tool. We implement novel semantics for speculating over store and return instructions and combine them with the semantics for speculating over branches. Our framework yields speculative semantics for speculating over any combination of those instructions that are secure by construction, i.e., we obtain these security guarantees for free. The implementation of our novel semantics in Spectector let us verify programs that are vulnerable to Spectre v1, Spectre v4, and Spectre v5 vulnerabilities as well as new snippets that are only vulnerable to their compositions.</p>
     
 
     
