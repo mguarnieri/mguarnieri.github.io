@@ -64,10 +64,12 @@
   
     
   
-  <meta name="description" content="Since the discovery of Spectre, a large number of hardware mechanisms for secure speculation have been proposed. Intuitively, more defensive mechanisms are less efficient but can securely execute a larger class of programs, while more permissive mechanisms may offer more performance but require more defensive programming. Unfortunately, there are no hardware-software contracts that would turn this intuition into a basis for principled co-design. In this paper, we put forward a framework for specifying such contracts, and we demonstrate its expressiveness and flexibility: On the hardware side, we use the framework to provide the first formalization and comparison of the security guarantees provided by a representative class of mechanisms for secure speculation. On the software side, we use the framework to characterize program properties that guarantee secure co-design in two scenarios  traditionally investigated in isolation: (1) ensuring that a benign program does not leak information while computing on confidential data, and (2) ensuring that a potentially malicious program cannot read outside of its designated sandbox. Finally, we show how the properties corresponding to both scenarios can be checked based on existing tools for software verification, and we use them to validate our findings on executable code." />
+  <meta name="description" content="Attacks like Spectre abuse speculative execution, one of the key performance optimizations of modern CPUs. Recently, several testing tools have emerged to automatically detect speculative leaks in commercial (black-box) CPUs. However, the testing process is still slow, which has hindered in-depth testing campaigns, and so far prevented the discovery of new classes of leakage.
+In this paper, we identify the root causes of the performance limitations in existing approaches, and propose techniques to overcome these limitations. With these techniques, we improve the testing speed over the state-of-the-art by up to two orders of magnitude.
+These improvements enable us to run a testing campaign of unprecedented depth on Intel and AMD CPUs. As a highlight, we discover two types of previously unknown speculative leaks (affecting string comparison and division) that have escaped previous manual and automatic analyses." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/publication/sp2021/" />
+  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/publication/sp2023/" />
 
   
   
@@ -282,7 +284,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://mguarnieri.github.io/publication/sp2021/" />
+  <link rel="canonical" href="https://mguarnieri.github.io/publication/sp2023/" />
 
   
   
@@ -308,18 +310,20 @@
     <meta property="twitter:creator" content="@wowchemy" />
   
   <meta property="og:site_name" content="Marco Guarnieri" />
-  <meta property="og:url" content="https://mguarnieri.github.io/publication/sp2021/" />
-  <meta property="og:title" content="Hardware-Software Contracts for Secure Speculation | Marco Guarnieri" />
-  <meta property="og:description" content="Since the discovery of Spectre, a large number of hardware mechanisms for secure speculation have been proposed. Intuitively, more defensive mechanisms are less efficient but can securely execute a larger class of programs, while more permissive mechanisms may offer more performance but require more defensive programming. Unfortunately, there are no hardware-software contracts that would turn this intuition into a basis for principled co-design. In this paper, we put forward a framework for specifying such contracts, and we demonstrate its expressiveness and flexibility: On the hardware side, we use the framework to provide the first formalization and comparison of the security guarantees provided by a representative class of mechanisms for secure speculation. On the software side, we use the framework to characterize program properties that guarantee secure co-design in two scenarios  traditionally investigated in isolation: (1) ensuring that a benign program does not leak information while computing on confidential data, and (2) ensuring that a potentially malicious program cannot read outside of its designated sandbox. Finally, we show how the properties corresponding to both scenarios can be checked based on existing tools for software verification, and we use them to validate our findings on executable code." /><meta property="og:image" content="https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://mguarnieri.github.io/publication/sp2023/" />
+  <meta property="og:title" content="Hide and Seek with Spectres: Efficient discovery of speculative information leaks with random testing | Marco Guarnieri" />
+  <meta property="og:description" content="Attacks like Spectre abuse speculative execution, one of the key performance optimizations of modern CPUs. Recently, several testing tools have emerged to automatically detect speculative leaks in commercial (black-box) CPUs. However, the testing process is still slow, which has hindered in-depth testing campaigns, and so far prevented the discovery of new classes of leakage.
+In this paper, we identify the root causes of the performance limitations in existing approaches, and propose techniques to overcome these limitations. With these techniques, we improve the testing speed over the state-of-the-art by up to two orders of magnitude.
+These improvements enable us to run a testing campaign of unprecedented depth on Intel and AMD CPUs. As a highlight, we discover two types of previously unknown speculative leaks (affecting string comparison and division) that have escaped previous manual and automatic analyses." /><meta property="og:image" content="https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2021-06-05T00:00:00&#43;00:00"
+        content="2023-01-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2021-06-05T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2023-01-01T00:00:00&#43;00:00">
   
 
   
@@ -341,16 +345,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://mguarnieri.github.io/publication/sp2021/"
+    "@id": "https://mguarnieri.github.io/publication/sp2023/"
   },
-  "headline": "Hardware-Software Contracts for Secure Speculation",
+  "headline": "Hide and Seek with Spectres: Efficient discovery of speculative information leaks with random testing",
   
-  "datePublished": "2021-06-05T00:00:00Z",
-  "dateModified": "2021-06-05T00:00:00Z",
+  "datePublished": "2023-01-01T00:00:00Z",
+  "dateModified": "2023-01-01T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Marco Guarnieri"
+    "name": "Oleksii Oleksenko"
   },
   
   "publisher": {
@@ -361,7 +365,7 @@
       "url": "https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Since the discovery of Spectre, a large number of hardware mechanisms for secure speculation have been proposed. Intuitively, more defensive mechanisms are less efficient but can securely execute a larger class of programs, while more permissive mechanisms may offer more performance but require more defensive programming. Unfortunately, there are no hardware-software contracts that would turn this intuition into a basis for principled co-design. In this paper, we put forward a framework for specifying such contracts, and we demonstrate its expressiveness and flexibility: On the hardware side, we use the framework to provide the first formalization and comparison of the security guarantees provided by a representative class of mechanisms for secure speculation. On the software side, we use the framework to characterize program properties that guarantee secure co-design in two scenarios  traditionally investigated in isolation: (1) ensuring that a benign program does not leak information while computing on confidential data, and (2) ensuring that a potentially malicious program cannot read outside of its designated sandbox. Finally, we show how the properties corresponding to both scenarios can be checked based on existing tools for software verification, and we use them to validate our findings on executable code."
+  "description": "Attacks like Spectre abuse speculative execution, one of the key performance optimizations of modern CPUs. Recently, several testing tools have emerged to automatically detect speculative leaks in commercial (black-box) CPUs. However, the testing process is still slow, which has hindered in-depth testing campaigns, and so far prevented the discovery of new classes of leakage.\nIn this paper, we identify the root causes of the performance limitations in existing approaches, and propose techniques to overcome these limitations. With these techniques, we improve the testing speed over the state-of-the-art by up to two orders of magnitude.\nThese improvements enable us to run a testing campaign of unprecedented depth on Intel and AMD CPUs. As a highlight, we discover two types of previously unknown speculative leaks (affecting string comparison and division) that have escaped previous manual and automatic analyses."
 }
 </script>
 
@@ -377,11 +381,11 @@
 
 
 
-  <title>Hardware-Software Contracts for Secure Speculation | Marco Guarnieri</title>
+  <title>Hide and Seek with Spectres: Efficient discovery of speculative information leaks with random testing | Marco Guarnieri</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="50e347fcdbf5fafef0ef5084a70d5351" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="a4cb511fb9b10ff65cbdac6ee429082b" >
 
   
   
@@ -810,7 +814,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Hardware-Software Contracts for Secure Speculation</h1>
+  <h1>Hide and Seek with Spectres: Efficient discovery of speculative information leaks with random testing</h1>
 
   
 
@@ -827,11 +831,11 @@
   <div>
     
 
-  <span class="author-highlighted">
+  <span >
+      Oleksii Oleksenko</span>, <span class="author-highlighted">
       Marco Guarnieri</span>, <span >
       Boris Köpf</span>, <span >
-      Jan Reineke</span>, <span >
-      Pepe Vila</span>
+      Mark Silberstein</span>
   </div>
   
   
@@ -842,7 +846,7 @@
     
       
     
-    June, 2021
+    January, 2023
   </span>
   
 
@@ -880,14 +884,14 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="/publication/sp2021/sp2021.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="/publication/sp2023/sp2023.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/sp2021/cite.bib">
+        data-filename="/publication/sp2023/cite.bib">
   Cite
 </a>
 
@@ -896,18 +900,12 @@
   
     
   
-<a class="btn btn-outline-primary btn-page-header" href="https://spectector.github.io" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/microsoft/sca-fuzzer" target="_blank" rel="noopener">
   Code
 </a>
 
 
 
-
-  
-  <a class="btn btn-outline-primary btn-page-header" href="/project/speculative-execution/">
-    Project
-  </a>
-  
 
   
   <a class="btn btn-outline-primary btn-page-header" href="/project/hwsw-codesign/">
@@ -917,78 +915,12 @@
 
 
 
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header" href="/files/papers/sp2021_poster.pdf" target="_blank" rel="noopener">
-  Poster
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header" href="/files/papers/sp2021_slides.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header" href="https://youtu.be/NmJs2UxeZKo" target="_blank" rel="noopener">
-  Video
-</a>
 
 
 
 
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2006.03841" target="_blank" rel="noopener">
-    Extended version (arXiv)</a>
 
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="https://youtu.be/vv1eVl8PHps" target="_blank" rel="noopener">
-    Preview video</a>
 
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="https://www.ieee-security.org/TC/SP2021/awards.html" target="_blank" rel="noopener">
-    Best paper award</a>
 
 
 </div>
@@ -1003,7 +935,9 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Since the discovery of Spectre, a large number of hardware mechanisms for secure speculation have been proposed. Intuitively, more defensive mechanisms are less efficient but can securely execute a larger class of programs, while more permissive mechanisms may offer more performance but require more defensive programming. Unfortunately, there are no hardware-software contracts that would turn this intuition into a basis for principled co-design. In this paper, we put forward a framework for specifying such contracts, and we demonstrate its expressiveness and flexibility: On the hardware side, we use the framework to provide the first formalization and comparison of the security guarantees provided by a representative class of mechanisms for secure speculation. On the software side, we use the framework to characterize program properties that guarantee secure co-design in two scenarios  traditionally investigated in isolation: (1) ensuring that a benign program does not leak information while computing on confidential data, and (2) ensuring that a potentially malicious program cannot read outside of its designated sandbox. Finally, we show how the properties corresponding to both scenarios can be checked based on existing tools for software verification, and we use them to validate our findings on executable code.</p>
+    <p class="pub-abstract">Attacks like Spectre abuse speculative execution, one of the key performance optimizations of modern CPUs. Recently, several testing tools have emerged to automatically detect speculative leaks in commercial (black-box) CPUs. However, the testing process is still slow, which has hindered in-depth testing campaigns, and so far prevented the discovery of new classes of leakage.
+In this paper, we identify the root causes of the performance limitations in existing approaches, and propose techniques to overcome these limitations. With these techniques, we improve the testing speed over the state-of-the-art by up to two orders of magnitude.
+These improvements enable us to run a testing campaign of unprecedented depth on Intel and AMD CPUs. As a highlight, we discover two types of previously unknown speculative leaks (affecting string comparison and division) that have escaped previous manual and automatic analyses.</p>
     
 
     
@@ -1031,7 +965,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <em>42nd IEEE Symposium on Security and Privacy</em>.</div>
+          <div class="col-12 col-md-9">In <em>44th IEEE Symposium on Security and Privacy</em>.</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -1061,6 +995,12 @@
 
 
   
+  
+    
+
+
+
+
   
     
 
@@ -1185,12 +1125,6 @@
 
     </div>
   </div>
-
-
-  
-    
-
-
 
 
   
