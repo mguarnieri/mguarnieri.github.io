@@ -5,12 +5,28 @@
     <link>https://mguarnieri.github.io/publication/</link>
       <atom:link href="https://mguarnieri.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 02 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://mguarnieri.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>Testing side-channel security of cryptographic implementations against future microarchitectures</title>
+      <link>https://mguarnieri.github.io/publication/lmtest/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/lmtest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synthesizing Hardware-Software Leakage Contracts for RISC-V Open-Source Processors</title>
+      <link>https://mguarnieri.github.io/publication/date2024/</link>
+      <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/date2024/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Specification and Verification of Side-channel Security for Open-source Processors via Leakage Contracts</title>

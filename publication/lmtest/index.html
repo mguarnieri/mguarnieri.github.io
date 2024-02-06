@@ -64,10 +64,10 @@
   
     
   
-  <meta name="description" content="Existing SQL access control mechanisms are extremely limited. Attackers can leak information and escalate their privileges using advanced database features such as views, triggers, and integrity constraints. This is not merely a problem of vendors lagging behind the state-of-the-art. The theoretical foundations for database security lack adequate security definitions and a realistic attacker model, both of which are needed to evaluate the security of modern databases. We address these issues and present a provably secure access control mechanism that prevents attacks that defeat popular SQL database systems." />
+  <meta name="description" content="How will future microarchitectures impact the security of existing cryptographic implementations? As we cannot keep reducing the size of transistors, chip vendors have started developing new microarchitectural optimizations to speed up computation. A recent study (Sanchez Vicarte et al., ISCA 2021) suggests that these optimizations might open the Pandora&#39;s box of microarchitectural attacks. However, there is little guidance on how to evaluate the security impact of future optimization proposals. To help chip vendors explore the impact of microarchitectural optimizations on cryptographic implementations, we develop (i) an expressive domain-specific language, called LmSpec, that allows them to specify the leakage model for the given optimization and (ii) a testing framework, called LmTest, to automatically detect leaks under the specified leakage model within the given implementation. Using this framework, we conduct an empirical study of 18 proposed microarchitectural optimizations on 25 implementations of eight cryptographic primitives in five popular libraries. We find that every implementation would contain secret-dependent leaks, sometimes sufficient to recover a victim&#39;s secret key, if these optimizations were realized. Ironically, some leaks are possible only because of coding idioms used to prevent leaks under the standard constant-time model." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/publication/eurosp2016/" />
+  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/publication/lmtest/" />
 
   
   
@@ -282,7 +282,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://mguarnieri.github.io/publication/eurosp2016/" />
+  <link rel="canonical" href="https://mguarnieri.github.io/publication/lmtest/" />
 
   
   
@@ -308,18 +308,18 @@
     <meta property="twitter:creator" content="@wowchemy" />
   
   <meta property="og:site_name" content="Marco Guarnieri" />
-  <meta property="og:url" content="https://mguarnieri.github.io/publication/eurosp2016/" />
-  <meta property="og:title" content="Strong and Provably Secure Database Access Control | Marco Guarnieri" />
-  <meta property="og:description" content="Existing SQL access control mechanisms are extremely limited. Attackers can leak information and escalate their privileges using advanced database features such as views, triggers, and integrity constraints. This is not merely a problem of vendors lagging behind the state-of-the-art. The theoretical foundations for database security lack adequate security definitions and a realistic attacker model, both of which are needed to evaluate the security of modern databases. We address these issues and present a provably secure access control mechanism that prevents attacks that defeat popular SQL database systems." /><meta property="og:image" content="https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://mguarnieri.github.io/publication/lmtest/" />
+  <meta property="og:title" content="Testing side-channel security of cryptographic implementations against future microarchitectures | Marco Guarnieri" />
+  <meta property="og:description" content="How will future microarchitectures impact the security of existing cryptographic implementations? As we cannot keep reducing the size of transistors, chip vendors have started developing new microarchitectural optimizations to speed up computation. A recent study (Sanchez Vicarte et al., ISCA 2021) suggests that these optimizations might open the Pandora&#39;s box of microarchitectural attacks. However, there is little guidance on how to evaluate the security impact of future optimization proposals. To help chip vendors explore the impact of microarchitectural optimizations on cryptographic implementations, we develop (i) an expressive domain-specific language, called LmSpec, that allows them to specify the leakage model for the given optimization and (ii) a testing framework, called LmTest, to automatically detect leaks under the specified leakage model within the given implementation. Using this framework, we conduct an empirical study of 18 proposed microarchitectural optimizations on 25 implementations of eight cryptographic primitives in five popular libraries. We find that every implementation would contain secret-dependent leaks, sometimes sufficient to recover a victim&#39;s secret key, if these optimizations were realized. Ironically, some leaks are possible only because of coding idioms used to prevent leaks under the standard constant-time model." /><meta property="og:image" content="https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2016-01-01T00:00:00&#43;00:00"
+        content="2024-01-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2016-01-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2024-01-01T00:00:00&#43;00:00">
   
 
   
@@ -341,16 +341,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://mguarnieri.github.io/publication/eurosp2016/"
+    "@id": "https://mguarnieri.github.io/publication/lmtest/"
   },
-  "headline": "Strong and Provably Secure Database Access Control",
+  "headline": "Testing side-channel security of cryptographic implementations against future microarchitectures",
   
-  "datePublished": "2016-01-01T00:00:00Z",
-  "dateModified": "2016-01-01T00:00:00Z",
+  "datePublished": "2024-01-01T00:00:00Z",
+  "dateModified": "2024-01-01T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Marco Guarnieri"
+    "name": "Gilles Barthe"
   },
   
   "publisher": {
@@ -361,7 +361,7 @@
       "url": "https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Existing SQL access control mechanisms are extremely limited. Attackers can leak information and escalate their privileges using advanced database features such as views, triggers, and integrity constraints. This is not merely a problem of vendors lagging behind the state-of-the-art. The theoretical foundations for database security lack adequate security definitions and a realistic attacker model, both of which are needed to evaluate the security of modern databases. We address these issues and present a provably secure access control mechanism that prevents attacks that defeat popular SQL database systems."
+  "description": "How will future microarchitectures impact the security of existing cryptographic implementations? As we cannot keep reducing the size of transistors, chip vendors have started developing new microarchitectural optimizations to speed up computation. A recent study (Sanchez Vicarte et al., ISCA 2021) suggests that these optimizations might open the Pandora's box of microarchitectural attacks. However, there is little guidance on how to evaluate the security impact of future optimization proposals. To help chip vendors explore the impact of microarchitectural optimizations on cryptographic implementations, we develop (i) an expressive domain-specific language, called LmSpec, that allows them to specify the leakage model for the given optimization and (ii) a testing framework, called LmTest, to automatically detect leaks under the specified leakage model within the given implementation. Using this framework, we conduct an empirical study of 18 proposed microarchitectural optimizations on 25 implementations of eight cryptographic primitives in five popular libraries. We find that every implementation would contain secret-dependent leaks, sometimes sufficient to recover a victim's secret key, if these optimizations were realized. Ironically, some leaks are possible only because of coding idioms used to prevent leaks under the standard constant-time model."
 }
 </script>
 
@@ -377,11 +377,11 @@
 
 
 
-  <title>Strong and Provably Secure Database Access Control | Marco Guarnieri</title>
+  <title>Testing side-channel security of cryptographic implementations against future microarchitectures | Marco Guarnieri</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="2fb4a98fe8ebcb0115a346a1f1896104" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="165b626a0d9db9acaca4615e881cbd39" >
 
   
   
@@ -810,7 +810,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Strong and Provably Secure Database Access Control</h1>
+  <h1>Testing side-channel security of cryptographic implementations against future microarchitectures</h1>
 
   
 
@@ -827,10 +827,17 @@
   <div>
     
 
-  <span class="author-highlighted">
+  <span >
+      Gilles Barthe</span>, <span >
+      Marcel Böhme</span>, <span >
+      Sunjay Cauligi</span>, <span >
+      Chitchanok Chuengsatiansup</span>, <span >
+      Daniel Genkin</span>, <span class="author-highlighted">
       Marco Guarnieri</span>, <span >
-      Srdjan Marinovic</span>, <span >
-      David Basin</span>
+      David Mateos Romero</span>, <span >
+      Peter Schwabe</span>, <span >
+      David Wu</span>, <span >
+      Yuval Yarom</span>
   </div>
   
   
@@ -841,7 +848,7 @@
     
       
     
-    January, 2016
+    January, 2024
   </span>
   
 
@@ -879,14 +886,14 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="/publication/eurosp2016/eurosp2016.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="/publication/lmtest/lmtest.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/eurosp2016/cite.bib">
+        data-filename="/publication/lmtest/cite.bib">
   Cite
 </a>
 
@@ -895,7 +902,7 @@
   
     
   
-<a class="btn btn-outline-primary btn-page-header" href="/uploads/code/eurosp2016_prototype.tar" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/hw-sw-contracts/leakage-model-testing" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -903,7 +910,7 @@
 
 
   
-  <a class="btn btn-outline-primary btn-page-header" href="/project/dbac-foundations/">
+  <a class="btn btn-outline-primary btn-page-header" href="/project/hwsw-codesign/">
     Project
   </a>
   
@@ -928,25 +935,8 @@
   
     
   
-  <a class="btn btn-outline-primary btn-page-header" href="http://arxiv.org/abs/1512.01479" target="_blank" rel="noopener">
-    Extended version (arXiv)</a>
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-    
-      
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="/uploads/code/eurosp2016_executable_models.tar" >
-    Executable models</a>
+  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2402.00641" target="_blank" rel="noopener">
+    arXiv version</a>
 
 
 </div>
@@ -961,7 +951,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Existing SQL access control mechanisms are extremely limited. Attackers can leak information and escalate their privileges using advanced database features such as views, triggers, and integrity constraints. This is not merely a problem of vendors lagging behind the state-of-the-art. The theoretical foundations for database security lack adequate security definitions and a realistic attacker model, both of which are needed to evaluate the security of modern databases. We address these issues and present a provably secure access control mechanism that prevents attacks that defeat popular SQL database systems.</p>
+    <p class="pub-abstract">How will future microarchitectures impact the security of existing cryptographic implementations? As we cannot keep reducing the size of transistors, chip vendors have started developing new microarchitectural optimizations to speed up computation. A recent study (Sanchez Vicarte et al., ISCA 2021) suggests that these optimizations might open the Pandora&rsquo;s box of microarchitectural attacks. However, there is little guidance on how to evaluate the security impact of future optimization proposals. To help chip vendors explore the impact of microarchitectural optimizations on cryptographic implementations, we develop (i) an expressive domain-specific language, called LmSpec, that allows them to specify the leakage model for the given optimization and (ii) a testing framework, called LmTest, to automatically detect leaks under the specified leakage model within the given implementation. Using this framework, we conduct an empirical study of 18 proposed microarchitectural optimizations on 25 implementations of eight cryptographic primitives in five popular libraries. We find that every implementation would contain secret-dependent leaks, sometimes sufficient to recover a victim&rsquo;s secret key, if these optimizations were realized. Ironically, some leaks are possible only because of coding idioms used to prevent leaks under the standard constant-time model.</p>
     
 
     
@@ -972,8 +962,8 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
-            <a href="/publication/#1">
-              Conference paper
+            <a href="/publication/#3">
+              Preprint
             </a>
           </div>
         </div>
@@ -989,7 +979,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <em>1st IEEE European Symposium on Security and Privacy</em>.</div>
+          <div class="col-12 col-md-9">Technical report</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -1019,6 +1009,36 @@
 
 
   
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
   
     
 
@@ -1143,6 +1163,18 @@
 
     </div>
   </div>
+
+
+  
+    
+
+
+
+
+  
+    
+
+
 
 
   
