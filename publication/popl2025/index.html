@@ -64,10 +64,10 @@
   
     
   
-  <meta name="description" content="Test isolation is a prerequisite for the correct execution of test suites on web applications. We present Test Execution Checkpointing, a method for efficient test isolation. Our method instruments web applications to support checkpointing and exploits this support to isolate and optimize tests. We have implemented and evaluated this method on five popular PHP web applications. The results show that our method not only provides test isolation essentially for free, it also reduces testing time by 44% on average." />
+  <meta name="description" content="Mainstream compilers implement different countermeasures to prevent specific classes of speculative execution attacks. Unfortunately, these countermeasures either lack formal guarantees or come with proofs restricted to speculative semantics capturing only a subset of the speculation mechanisms supported by modern CPUs, thereby limiting their practical applicability. Ideally, these security proofs should target a speculative semantics capturing the effects of all speculation mechanisms implemented in modern CPUs. However, this is impractical and requires new secure compilation proofs to support additional speculation mechanisms. In this paper, we address this problem by proposing a novel secure compilation framework that allows lifting the security guarantees provided by Spectre countermeasures from weaker speculative semantics (ignoring some speculation mechanisms) to stronger ones (accounting for the omitted mechanisms) without requiring new secure compilation proofs. Using our lifting framework, we performed the most comprehensive security analysis of Spectre countermeasures implemented in mainstream compilers to date. Our analysis spans 9 different countermeasures against 5 classes of Spectre attacks, which we proved secure against a speculative semantics accounting for 5 different speculation mechanisms. Our analysis highlights that fence-based and retpoline-based countermeasures can be securely lifted to the strongest speculative semantics under study. In contrast, countermeasures based on speculative load hardening cannot be securely lifted to semantics supporting indirect jump speculation." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/publication/issta2017/" />
+  <link rel="alternate" hreflang="en-us" href="https://mguarnieri.github.io/publication/popl2025/" />
 
   
   
@@ -282,7 +282,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://mguarnieri.github.io/publication/issta2017/" />
+  <link rel="canonical" href="https://mguarnieri.github.io/publication/popl2025/" />
 
   
   
@@ -308,18 +308,18 @@
     <meta property="twitter:creator" content="@wowchemy" />
   
   <meta property="og:site_name" content="Marco Guarnieri" />
-  <meta property="og:url" content="https://mguarnieri.github.io/publication/issta2017/" />
-  <meta property="og:title" content="Test Execution Checkpointing for Web Applications | Marco Guarnieri" />
-  <meta property="og:description" content="Test isolation is a prerequisite for the correct execution of test suites on web applications. We present Test Execution Checkpointing, a method for efficient test isolation. Our method instruments web applications to support checkpointing and exploits this support to isolate and optimize tests. We have implemented and evaluated this method on five popular PHP web applications. The results show that our method not only provides test isolation essentially for free, it also reduces testing time by 44% on average." /><meta property="og:image" content="https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://mguarnieri.github.io/publication/popl2025/" />
+  <meta property="og:title" content="Do You Even Lift? Strengthening Compiler Security Guarantees against Spectre Attacks | Marco Guarnieri" />
+  <meta property="og:description" content="Mainstream compilers implement different countermeasures to prevent specific classes of speculative execution attacks. Unfortunately, these countermeasures either lack formal guarantees or come with proofs restricted to speculative semantics capturing only a subset of the speculation mechanisms supported by modern CPUs, thereby limiting their practical applicability. Ideally, these security proofs should target a speculative semantics capturing the effects of all speculation mechanisms implemented in modern CPUs. However, this is impractical and requires new secure compilation proofs to support additional speculation mechanisms. In this paper, we address this problem by proposing a novel secure compilation framework that allows lifting the security guarantees provided by Spectre countermeasures from weaker speculative semantics (ignoring some speculation mechanisms) to stronger ones (accounting for the omitted mechanisms) without requiring new secure compilation proofs. Using our lifting framework, we performed the most comprehensive security analysis of Spectre countermeasures implemented in mainstream compilers to date. Our analysis spans 9 different countermeasures against 5 classes of Spectre attacks, which we proved secure against a speculative semantics accounting for 5 different speculation mechanisms. Our analysis highlights that fence-based and retpoline-based countermeasures can be securely lifted to the strongest speculative semantics under study. In contrast, countermeasures based on speculative load hardening cannot be securely lifted to semantics supporting indirect jump speculation." /><meta property="og:image" content="https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2017-01-01T00:00:00&#43;00:00"
+        content="2025-01-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2017-01-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2025-01-01T00:00:00&#43;00:00">
   
 
   
@@ -341,16 +341,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://mguarnieri.github.io/publication/issta2017/"
+    "@id": "https://mguarnieri.github.io/publication/popl2025/"
   },
-  "headline": "Test Execution Checkpointing for Web Applications",
+  "headline": "Do You Even Lift? Strengthening Compiler Security Guarantees against Spectre Attacks",
   
-  "datePublished": "2017-01-01T00:00:00Z",
-  "dateModified": "2017-01-01T00:00:00Z",
+  "datePublished": "2025-01-01T00:00:00Z",
+  "dateModified": "2025-01-01T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Marco Guarnieri"
+    "name": "Xaver Fabian"
   },
   
   "publisher": {
@@ -361,7 +361,7 @@
       "url": "https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Test isolation is a prerequisite for the correct execution of test suites on web applications. We present Test Execution Checkpointing, a method for efficient test isolation. Our method instruments web applications to support checkpointing and exploits this support to isolate and optimize tests. We have implemented and evaluated this method on five popular PHP web applications. The results show that our method not only provides test isolation essentially for free, it also reduces testing time by 44% on average."
+  "description": "Mainstream compilers implement different countermeasures to prevent specific classes of speculative execution attacks. Unfortunately, these countermeasures either lack formal guarantees or come with proofs restricted to speculative semantics capturing only a subset of the speculation mechanisms supported by modern CPUs, thereby limiting their practical applicability. Ideally, these security proofs should target a speculative semantics capturing the effects of all speculation mechanisms implemented in modern CPUs. However, this is impractical and requires new secure compilation proofs to support additional speculation mechanisms. In this paper, we address this problem by proposing a novel secure compilation framework that allows lifting the security guarantees provided by Spectre countermeasures from weaker speculative semantics (ignoring some speculation mechanisms) to stronger ones (accounting for the omitted mechanisms) without requiring new secure compilation proofs. Using our lifting framework, we performed the most comprehensive security analysis of Spectre countermeasures implemented in mainstream compilers to date. Our analysis spans 9 different countermeasures against 5 classes of Spectre attacks, which we proved secure against a speculative semantics accounting for 5 different speculation mechanisms. Our analysis highlights that fence-based and retpoline-based countermeasures can be securely lifted to the strongest speculative semantics under study. In contrast, countermeasures based on speculative load hardening cannot be securely lifted to semantics supporting indirect jump speculation."
 }
 </script>
 
@@ -377,11 +377,11 @@
 
 
 
-  <title>Test Execution Checkpointing for Web Applications | Marco Guarnieri</title>
+  <title>Do You Even Lift? Strengthening Compiler Security Guarantees against Spectre Attacks | Marco Guarnieri</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="8e9b8a7a8476382a40583c26aa5e529a" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3feec7935256e276996fe5b77b827faf" >
 
   
   
@@ -810,7 +810,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Test Execution Checkpointing for Web Applications</h1>
+  <h1>Do You Even Lift? Strengthening Compiler Security Guarantees against Spectre Attacks</h1>
 
   
 
@@ -827,12 +827,11 @@
   <div>
     
 
-  <span class="author-highlighted">
+  <span >
+      Xaver Fabian</span>, <span >
+      Marco Patrignani</span>, <span class="author-highlighted">
       Marco Guarnieri</span>, <span >
-      Petar Tsankov</span>, <span >
-      Tristan Buchs</span>, <span >
-      Mohammad Torabi Dashti</span>, <span >
-      David Basin</span>
+      Michael Backes</span>
   </div>
   
   
@@ -843,7 +842,7 @@
     
       
     
-    January, 2017
+    January, 2025
   </span>
   
 
@@ -881,14 +880,14 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="/publication/issta2017/issta2017.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="/publication/popl2025/popl2025.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/issta2017/cite.bib">
+        data-filename="/publication/popl2025/cite.bib">
   Cite
 </a>
 
@@ -897,13 +896,18 @@
   
     
   
-<a class="btn btn-outline-primary btn-page-header" href="/uploads/code/issta2017.tar" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/XFabian/secure_comp_lifting" target="_blank" rel="noopener">
   Code
 </a>
 
 
 
 
+  
+  <a class="btn btn-outline-primary btn-page-header" href="/project/speculative-execution/">
+    Project
+  </a>
+  
 
 
 
@@ -912,6 +916,21 @@
 
 
 
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2405.10089" target="_blank" rel="noopener">
+    arXiv version</a>
 
 
 </div>
@@ -926,7 +945,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Test isolation is a prerequisite for the correct execution of test suites on web applications. We present Test Execution Checkpointing, a method for efficient test isolation. Our method instruments web applications to support checkpointing and exploits this support to isolate and optimize tests. We have implemented and evaluated this method on five popular PHP web applications. The results show that our method not only provides test isolation essentially for free, it also reduces testing time by 44% on average.</p>
+    <p class="pub-abstract">Mainstream compilers implement different countermeasures to prevent specific classes of speculative execution attacks. Unfortunately, these countermeasures either lack formal guarantees or come with proofs restricted to speculative semantics capturing only a subset of the speculation mechanisms supported by modern CPUs, thereby limiting their practical applicability. Ideally, these security proofs should target a speculative semantics capturing the effects of all speculation mechanisms implemented in modern CPUs. However, this is impractical and requires new secure compilation proofs to support additional speculation mechanisms. In this paper, we address this problem by proposing a novel secure compilation framework that allows lifting the security guarantees provided by Spectre countermeasures from weaker speculative semantics (ignoring some speculation mechanisms) to stronger ones (accounting for the omitted mechanisms) without requiring new secure compilation proofs. Using our lifting framework, we performed the most comprehensive security analysis of Spectre countermeasures implemented in mainstream compilers to date. Our analysis spans 9 different countermeasures against 5 classes of Spectre attacks, which we proved secure against a speculative semantics accounting for 5 different speculation mechanisms. Our analysis highlights that fence-based and retpoline-based countermeasures can be securely lifted to the strongest speculative semantics under study. In contrast, countermeasures based on speculative load hardening cannot be securely lifted to semantics supporting indirect jump speculation.</p>
     
 
     
@@ -954,7 +973,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <em>26th ACM SIGSOFT International Symposium on Software Testing and Analysis</em>.</div>
+          <div class="col-12 col-md-9">In <em>52nd ACM SIGPLAN Symposium on Principles of Programming Languages</em>.</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -984,6 +1003,18 @@
 
 
   
+  
+    
+
+
+
+
+  
+    
+
+
+
+
   
     
 
@@ -1108,24 +1139,6 @@
 
     </div>
   </div>
-
-
-  
-    
-
-
-
-
-  
-    
-
-
-
-
-  
-    
-
-
 
 
   

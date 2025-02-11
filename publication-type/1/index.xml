@@ -5,12 +5,36 @@
     <link>https://mguarnieri.github.io/publication-type/1/</link>
       <atom:link href="https://mguarnieri.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mguarnieri.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
       <link>https://mguarnieri.github.io/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>AMuLeT: Automated Design-Time Testing of Secure Speculation Countermeasures</title>
+      <link>https://mguarnieri.github.io/publication/asplos2025/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/asplos2025/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Do You Even Lift? Strengthening Compiler Security Guarantees against Spectre Attacks</title>
+      <link>https://mguarnieri.github.io/publication/popl2025/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/popl2025/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing side-channel security of cryptographic implementations against future microarchitectures</title>
+      <link>https://mguarnieri.github.io/publication/ccs2024/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://mguarnieri.github.io/publication/ccs2024/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Synthesizing Hardware-Software Leakage Contracts for RISC-V Open-Source Processors</title>
